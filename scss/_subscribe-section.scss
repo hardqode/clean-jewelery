@@ -1,0 +1,31 @@
+.subscribe-section{
+  padding-top: 61px;
+  padding-bottom: 56px;
+  background-image: url("../assets/bg-subscribe.png");
+  .subscribe-block{
+    width: 100%;
+    display: flex;
+    margin-top: 43px;
+    padding-left: 15px;
+    padding-right: 15px;
+    input{
+      border: 0;
+      background-color: #f7f7f7;
+      border-radius: 20px;
+      width: 100%;
+      padding-left: 25px;
+      padding-right: 25px;
+      margin-right: -190px;
+      height: 47px;
+      &::placeholder{
+          font-size: 18px;
+          font-family: "PFAgoraSerifPro";
+          color: rgb(51, 51, 51);
+          line-height: 1.2;
+      }
+    }
+    button{
+      margin-top: 2px;
+    }
+  }
+}

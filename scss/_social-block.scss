@@ -1,0 +1,29 @@
+.social-block {
+  display: flex;
+  margin-top: 16px;
+  .social-block-item {
+    margin-right: 6px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    background-color: #afafaf;
+    border-radius: 100%;
+    &:hover {
+      background-color: $blue;
+    }
+    a {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      &:hover{
+        text-decoration: none;
+      }
+      i {
+        margin: auto;
+        color: white;
+        font-size: 14px;
+
+      }
+    }
+  }
+}
