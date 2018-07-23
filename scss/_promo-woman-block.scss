@@ -1,0 +1,17 @@
+.promo-woman {
+  background-image: url('../assets/bg-woman.png');
+  background-position-x:100% ;
+  background-size: cover;
+  height: 731px;
+  padding-top: 127px;
+  .logo {
+    margin-bottom: 37px;
+  }
+  .promo-description {
+    font-size: 24px;
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+    width: 466px;
+
+  }
+}

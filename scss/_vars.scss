@@ -1,0 +1,23 @@
+body{
+  font-family: 'PFAgoraSerifPro', sans-serif;
+}
+
+$black:rgb(35, 34, 34);
+$blue:#44afd4;
+$deepBlue:rgb(0, 146, 197);
+
+.text-deepBlue{
+  color: $deepBlue;
+}
+.text-blue{
+  color: $blue;
+}
+.fw-bold{
+  font-family: 'PFAgoraSerifProB', sans-serif;
+}
+.mb43{
+  margin-bottom: 43px;
+}
+.bg-white-uzor{
+  background-image: url('../assets/bg-white.png');
+}
