@@ -44,6 +44,11 @@ button {
     font-size: 18px;
     color: white;
     line-height: 0.8; }
+  .button.btn-pink {
+    background-color: rgba(249, 145, 145, 0.89);
+    font-size: 18px;
+    color: white;
+    line-height: 0.8; }
   .button.outline-gray {
     border: 1px solid #060606;
     border-radius: 21px;
@@ -52,7 +57,7 @@ button {
     line-height: 0.8;
     background-color: rgba(255, 255, 255, 0.961); }
     .button.outline-gray:hover {
-      border: 0;
+      border: 1px solid transparent;
       background-color: #c5c5c5;
       color: white; }
   .button.btn-gray {
@@ -225,6 +230,106 @@ button {
       position: relative; }
       .slider .slider-container .slider-navigation .arrow {
         position: absolute; }
+
+.header-slider {
+  position: relative; }
+  .header-slider .slider-arrow {
+    z-index: 3;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    bottom: 40px;
+    margin: auto;
+    background: transparent;
+    border: 0;
+    width: 30px;
+    height: 55px; }
+    .header-slider .slider-arrow:hover:before {
+      background-color: #0092c5; }
+    .header-slider .slider-arrow:hover:after {
+      background-color: #0092c5; }
+    .header-slider .slider-arrow.left {
+      left: 30px; }
+    .header-slider .slider-arrow.right {
+      right: 30px;
+      transform: rotate(180deg);
+      top: -27px; }
+    .header-slider .slider-arrow:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      height: 3px;
+      width: 30px;
+      background: white;
+      transform: rotate(45deg); }
+    .header-slider .slider-arrow:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      height: 3px;
+      width: 30px;
+      top: 7px;
+      background: white;
+      transform: rotate(-45deg); }
+  .header-slider .owl-dots {
+    transform: translateY(-55px); }
+    .header-slider .owl-dots .owl-dot.active span {
+      background: #0092c5; }
+    .header-slider .owl-dots .owl-dot span {
+      background: white; }
+  .header-slider .slider-item {
+    position: relative;
+    text-align: center; }
+    .header-slider .slider-item .bg-container {
+      position: relative;
+      text-align: center; }
+      .header-slider .slider-item .bg-container .bg-img {
+        width: initial;
+        height: initial;
+        z-index: -1; }
+    .header-slider .slider-item .header-slider-item-content {
+      padding-top: 87px;
+      z-index: 2;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: auto; }
+      .header-slider .slider-item .header-slider-item-content .splitter {
+        display: flex;
+        align-items: center;
+        margin-bottom: 33px; }
+        .header-slider .slider-item .header-slider-item-content .splitter button {
+          margin-right: 20px;
+          margin-left: 20px; }
+        .header-slider .slider-item .header-slider-item-content .splitter .white-line {
+          flex: 1;
+          height: 2px;
+          background: white; }
+        .header-slider .slider-item .header-slider-item-content .splitter .logo {
+          width: 41px !important;
+          height: 44px !important; }
+      .header-slider .slider-item .header-slider-item-content .text-block {
+        text-align: center; }
+        .header-slider .slider-item .header-slider-item-content .text-block .text {
+          font-size: 48px;
+          font-family: "PFAgoraSerifProB";
+          color: #333333;
+          text-transform: uppercase;
+          line-height: 1;
+          margin-bottom: 0; }
+        .header-slider .slider-item .header-slider-item-content .text-block .text-blue {
+          font-size: 48px;
+          line-height: 1;
+          margin-bottom: 33px; }
+      .header-slider .slider-item .header-slider-item-content .item-img-container {
+        width: 90%;
+        margin: 16px auto auto; }
+        .header-slider .slider-item .header-slider-item-content .item-img-container > img {
+          max-width: 70%;
+          margin-left: auto;
+          margin-right: auto;
+          max-height: initial; }
 
 .subscribe-section {
   padding-top: 61px;

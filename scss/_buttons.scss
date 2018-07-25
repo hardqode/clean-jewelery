@@ -13,6 +13,12 @@ button{
     color: rgb(255, 255, 255);
     line-height: 0.8;
   }
+  &.btn-pink {
+    background-color: rgba(249, 145, 145, 0.89);
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    line-height: 0.8;
+  }
   &.outline-gray {
     border: 1px solid rgb(6, 6, 6);
     border-radius: 21px;
@@ -22,7 +28,7 @@ button{
     line-height: 0.8;
     background-color: rgba(255, 255, 255, 0.961);
     &:hover{
-      border: 0;
+      border: 1px solid transparent;
       background-color: rgb(197, 197, 197);
       color: rgb(255, 255, 255);
     }

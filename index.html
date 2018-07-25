@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta content="width = 1920" name="viewport">
+    <meta content="width = 1920,initial-scale=1" name="viewport">
     <title>Title</title>
     <link rel="stylesheet" href="./css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.css">
-    <link rel="stylesheet" href="./css/build.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
           integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/build.css">
 </head>
 <body>
 <section>
@@ -80,8 +81,75 @@
         </div>
     </div>
 </section>
-<section class="big-slider bg-danger">
-    TODO slider
+<section class="header-slider">
+    <button class="slider-arrow left">
+
+    </button>
+    <button class="slider-arrow right">
+
+    </button>
+    <div class="slider-constructor owl-carousel owl-theme">
+        <div class="slider-item">
+            <div class="bg-container">
+                <img src="./assets/header-slider-src/header-slider.png" alt="" class="bg-img">
+            </div>
+            <div class="container header-slider-item-content">
+                <div class="row">
+                    <div class="col-6 ml-auto">
+                        <div class="splitter">
+                            <span class="white-line"></span>
+                            <img src="./assets/header-slider-src/logo@2x.png" width="41" alt="" class="logo">
+                            <span class="white-line"></span>
+                        </div>
+                        <div class="text-block">
+                            <p class="text">Федеральная сеть</p>
+                            <p class="text-blue">ювелирных магазинов</p>
+                        </div>
+                        <div class="splitter mb-0">
+                            <span class="white-line"></span>
+                            <button class="button btn-pink">Подробнее</button>
+                            <span class="white-line"></span>
+                        </div>
+                        <div class="item-img-container">
+                            <img src="./assets/header-slider-src/ring.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-item">
+            <div class="bg-container">
+                <img src="./assets/header-slider-src/header-slider.png" alt="" class="bg-img">
+            </div>
+            <div class="container header-slider-item-content">
+                <div class="row">
+                    <div class="col-6 ml-auto">
+                        <div class="splitter">
+                            <span class="white-line"></span>
+                            <img src="./assets/header-slider-src/logo@2x.png" width="41" alt="" class="logo">
+                            <span class="white-line"></span>
+                        </div>
+                        <div class="text-block">
+                            <p class="text">Федеральная сеть</p>
+                            <p class="text-blue">ювелирных магазинов</p>
+                        </div>
+                        <div class="splitter mb-0">
+                            <span class="white-line"></span>
+                            <button class="button btn-pink">Подробнее</button>
+                            <span class="white-line"></span>
+                        </div>
+                        <div class="item-img-container">
+                            <img src="./assets/header-slider-src/ring.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-item">
+            <img src="./assets/header-slider-src/header-slider.png" alt="" class="bg-img">
+        </div>
+    </div>
+
 </section>
 <section class="bg-white-uzor main-section">
     <div class="container">
@@ -197,7 +265,8 @@
                         <div class="item-btn-block">
                             <button class="button outline-gray">Подробнее</button>
                         </div>
-                    </div> <div class="slider-item">
+                    </div>
+                    <div class="slider-item">
                         <h3>Браслет</h3>
                         <div class="item-img">
                             <img src="./assets/sliders-first/2.png" alt="">
@@ -209,7 +278,8 @@
                         <div class="item-btn-block">
                             <button class="button outline-gray">Подробнее</button>
                         </div>
-                    </div> <div class="slider-item">
+                    </div>
+                    <div class="slider-item">
                         <h3>Браслет</h3>
                         <div class="item-img">
                             <img src="./assets/sliders-first/3.png" alt="">
@@ -221,7 +291,8 @@
                         <div class="item-btn-block">
                             <button class="button outline-gray">Подробнее</button>
                         </div>
-                    </div> <div class="slider-item">
+                    </div>
+                    <div class="slider-item">
                         <h3>Браслет</h3>
                         <div class="item-img">
                             <img src="./assets/sliders-first/4.png" alt="">
@@ -357,6 +428,13 @@
         items: 4,
         margin: 16,
         loop: true
+    });
+    $('.header-slider .slider-constructor').owlCarousel({
+        dots: true,
+        items: 1,
+        margin: 0,
+        loop: true,
+        autoHeight:true
     });
 </script>
 </body>
