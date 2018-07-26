@@ -141,6 +141,47 @@ button {
   padding-bottom: 83px; }
   .slider.jeweleries {
     padding-top: 58px; }
+  .slider.hits {
+    padding-top: 116px; }
+    .slider.hits h1 {
+      margin-bottom: 34px; }
+  .slider .gray-splitter {
+    width: 160px;
+    margin-right: 12px;
+    margin-left: 12px;
+    position: relative; }
+    .slider .gray-splitter:before {
+      position: absolute;
+      content: '';
+      border-bottom: 1px dashed #cbcbcb;
+      height: 2px;
+      top: 20px;
+      left: 0;
+      width: 100%; }
+  .slider .container {
+    position: relative; }
+    .slider .container .arrow {
+      position: absolute;
+      top: 0;
+      bottom: 40px;
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.2);
+      width: 45px;
+      border: 0;
+      border-radius: 100%;
+      padding: 0;
+      height: 45px; }
+      .slider .container .arrow:hover {
+        background: #0092c5; }
+      .slider .container .arrow.left {
+        left: -63px; }
+        .slider .container .arrow.left img {
+          position: relative;
+          left: -3px; }
+      .slider .container .arrow.right {
+        right: -63px; }
+        .slider .container .arrow.right img {
+          transform: rotate(180deg); }
   .slider .slider-nav {
     margin-top: 50px;
     margin-bottom: 31px;
@@ -180,10 +221,38 @@ button {
       background-color: white;
       height: 500px;
       text-align: center;
-      padding-top: 31px; }
+      padding-top: 31px;
+      position: relative; }
       .slider .slider-container .slider-item:hover {
         padding-top: 30px;
         border: 1px solid #44afd4; }
+      .slider .slider-container .slider-item .promo-label {
+        border-radius: 100%;
+        position: absolute;
+        left: 15px;
+        top: 60px;
+        width: 53px;
+        height: 53px;
+        color: white;
+        background-color: #f99191;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        font-family: "PFAgoraSerifProB"; }
+        .slider .slider-container .slider-item .promo-label .sale-amount {
+          font-size: 18px;
+          margin-bottom: 0;
+          line-height: 1;
+          margin-left: -5px; }
+        .slider .slider-container .slider-item .promo-label .text {
+          font-size: 11px;
+          margin-bottom: 0;
+          margin-top: -16px; }
+        .slider .slider-container .slider-item .promo-label.new {
+          background-color: #6b6b6b;
+          font-size: 18px;
+          text-transform: uppercase; }
       .slider .slider-container .slider-item h3 {
         font-size: 24px;
         font-family: "PFAgoraSerifProB";

@@ -4,6 +4,61 @@
   &.jeweleries {
     padding-top: 58px;
   }
+  &.hits {
+    padding-top: 116px;
+    h1 {
+      margin-bottom: 34px;
+    }
+  }
+  .gray-splitter {
+    width: 160px;
+    margin-right: 12px;
+    margin-left: 12px;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: '';
+      border-bottom: 1px dashed rgb(203, 203, 203);
+      height: 2px;
+      top: 20px;
+      left: 0;
+      width: 100%;
+    }
+  }
+  .container {
+    position: relative;
+
+    .arrow {
+      position: absolute;
+      top: 0;
+      bottom: 40px;
+      margin: auto;
+      background-color: rgba(0, 0, 0, .2);
+      width: 45px;
+      border: 0;
+
+      &:hover {
+        background: #0092c5;
+      }
+      border-radius: 100%;
+      padding: 0;
+      height: 45px;
+      &.left {
+        left: -63px;
+        img {
+          position: relative;
+          left: -3px;
+        }
+      }
+      &.right {
+        right: -63px;
+        img {
+          transform: rotate(180deg);
+        }
+      }
+
+    }
+  }
   .slider-nav {
     margin-top: 50px;
     margin-bottom: 31px;
@@ -53,9 +108,42 @@
       height: 500px;
       text-align: center;
       padding-top: 31px;
+      position: relative;
       &:hover {
         padding-top: 30px;
         border: 1px solid $blue;
+      }
+      .promo-label {
+        border-radius: 100%;
+        position: absolute;
+        left: 15px;
+        top: 60px;
+        width: 53px;
+        height: 53px;
+        color: white;
+        background-color: rgb(249, 145, 145);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        font-family: "PFAgoraSerifProB";
+        .sale-amount {
+          font-size: 18px;
+          margin-bottom: 0;
+          line-height: 1;
+          margin-left: -5px;
+        }
+        .text {
+          font-size: 11px;
+          margin-bottom: 0;
+          margin-top: -16px;
+        }
+        &.new {
+
+          background-color: rgb(107, 107, 107);
+          font-size: 18px;
+          text-transform: uppercase;
+        }
       }
       h3 {
         font-size: 24px;
@@ -121,7 +209,7 @@
 
 .header-slider {
   position: relative;
-  .slider-arrow{
+  .slider-arrow {
     z-index: 3;
     cursor: pointer;
     position: absolute;
@@ -132,23 +220,23 @@
     border: 0;
     width: 30px;
     height: 55px;
-    &:hover{
+    &:hover {
       &:before {
         background-color: $deepBlue;
       }
-      &:after{
+      &:after {
         background-color: $deepBlue;
       }
     }
-    &.left{
+    &.left {
       left: 30px;
     }
-    &.right{
+    &.right {
       right: 30px;
       transform: rotate(180deg);
       top: -27px;
     }
-    &:before{
+    &:before {
       content: '';
       position: absolute;
       left: 0;
@@ -157,7 +245,7 @@
       background: white;
       transform: rotate(45deg);
     }
-    &:after{
+    &:after {
       content: '';
       position: absolute;
       left: 0;
@@ -184,7 +272,7 @@
   .slider-item {
     position: relative;
     text-align: center;
-    .bg-container{
+    .bg-container {
       position: relative;
       text-align: center;
       .bg-img {
@@ -200,7 +288,7 @@
     }
     .header-slider-item-content {
       //@media (min-width: 1440px) {
-        padding-top: 87px;
+      padding-top: 87px;
       //}
       //padding-top: 87px;
       z-index: 2;
@@ -232,7 +320,7 @@
         text-align: center;
         .text {
           //@media (min-width: 1440px) {
-            font-size: 48px;
+          font-size: 48px;
 
           //}
           //font-size: 24px;
@@ -244,7 +332,7 @@
         }
         .text-blue {
           //@media (min-width: 1440px) {
-            font-size: 48px;
+          font-size: 48px;
 
           //}
           line-height: 1;
@@ -252,10 +340,10 @@
           //font-size: 24px;
         }
       }
-      .item-img-container{
+      .item-img-container {
         width: 90%;
         margin: 16px auto auto;
-        > img{
+        > img {
           max-width: 70%;
           margin-left: auto;
           margin-right: auto;
