@@ -69,7 +69,15 @@
       margin-right: 25px;
       margin-left: 25px;
       padding-bottom: 13px;
-      &:hover, .active {
+      &:hover{
+        button {
+          color: $blue;
+          &:after {
+            opacity: 1;
+          }
+        }
+      }
+      &.active{
         button {
           color: $blue;
           &:after {

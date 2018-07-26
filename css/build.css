@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: 'PFAgoraSerifPro', sans-serif; }
 
@@ -22,6 +23,11 @@ body {
   color: black;
   line-height: 1.2; }
 
+.circe {
+  font-family: 'Circe', sans-serif; }
+  .circe.fw-bold {
+    font-weight: bold; }
+
 h1 {
   font-size: 36px; }
 
@@ -29,6 +35,12 @@ h2 {
   font-size: 24px;
   font-family: "PFAgoraSerifProB";
   color: #333333;
+  line-height: 1.2; }
+
+h3 {
+  font-size: 30px;
+  font-family: "Circe";
+  font-weight: bold;
   line-height: 1.2; }
 
 button {
@@ -68,6 +80,22 @@ button {
     font-size: 18px;
     color: white;
     line-height: 1; }
+
+.breadcrumbs .breadcrumb-item {
+  font-size: 14px;
+  cursor: pointer;
+  font-family: 'Gilroy',sans-serif;
+  font-weight: 300;
+  color: #0092c5;
+  text-decoration: underline;
+  line-height: 1.2; }
+  .breadcrumbs .breadcrumb-item:last-of-type {
+    color: black;
+    text-decoration: none; }
+  .breadcrumbs .breadcrumb-item + .breadcrumb-item:before {
+    content: '›';
+    position: relative;
+    top: -1px; }
 
 .header-container {
   padding-top: 10px;
@@ -123,6 +151,74 @@ button {
 .main-section {
   padding-top: 88px;
   padding-bottom: 198px; }
+
+.about-section {
+  padding-top: 43px; }
+  .about-section h1 {
+    margin-bottom: 45px; }
+  .about-section p {
+    margin-bottom: 0; }
+  .about-section .promo-block {
+    margin-top: 42px;
+    margin-bottom: 94px;
+    padding-top: 80px;
+    height: 497px;
+    background: url("../assets/bg-about-promo.png"); }
+    .about-section .promo-block .promo-description img {
+      width: 255px; }
+    .about-section .promo-block .promo-description .splitter {
+      margin-top: 32px;
+      margin-bottom: 29px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .about-section .promo-block .promo-description .splitter .split-item-white {
+        width: 100px;
+        height: 2px;
+        border-top: 1px dashed white; }
+      .about-section .promo-block .promo-description .splitter img {
+        width: 28px;
+        margin-right: 15px;
+        margin-left: 15px; }
+    .about-section .promo-block .promo-description .primary-text {
+      font-family: Circe;
+      padding-left: 13px;
+      padding-right: 13px; }
+
+.about-quality {
+  padding-top: 81px;
+  padding-bottom: 85px;
+  background-image: url("../assets/bg-about-quality.png");
+  background-size: cover; }
+  .about-quality h3 {
+    font-family: Circe;
+    margin-bottom: 33px; }
+  .about-quality p {
+    padding-right: 20px;
+    margin-bottom: 0; }
+
+.about-proof {
+  padding-top: 81px;
+  padding-bottom: 85px; }
+  .about-proof h3 {
+    font-family: Circe;
+    margin-bottom: 33px; }
+  .about-proof p {
+    margin-bottom: 0; }
+
+.about-individuality {
+  padding-top: 78px;
+  padding-bottom: 78px;
+  background-image: url("../assets/bg-about-individuality.png");
+  background-size: cover; }
+  .about-individuality h3 {
+    font-family: Circe;
+    margin-bottom: 33px; }
+  .about-individuality p {
+    margin-bottom: 0; }
+  .about-individuality .about-description {
+    padding-left: 15px;
+    width: 417px; }
 
 .tiles {
   padding-top: 124px;
@@ -192,9 +288,13 @@ button {
       margin-right: 25px;
       margin-left: 25px;
       padding-bottom: 13px; }
-      .slider .slider-nav .slider-nav--item:hover button, .slider .slider-nav .slider-nav--item .active button {
+      .slider .slider-nav .slider-nav--item:hover button {
         color: #44afd4; }
-        .slider .slider-nav .slider-nav--item:hover button:after, .slider .slider-nav .slider-nav--item .active button:after {
+        .slider .slider-nav .slider-nav--item:hover button:after {
+          opacity: 1; }
+      .slider .slider-nav .slider-nav--item.active button {
+        color: #44afd4; }
+        .slider .slider-nav .slider-nav--item.active button:after {
           opacity: 1; }
       .slider .slider-nav .slider-nav--item button {
         padding: 0;
@@ -411,6 +511,7 @@ button {
     padding-left: 15px;
     padding-right: 15px; }
     .subscribe-section .subscribe-block input {
+      outline: none !important;
       border: 0;
       background-color: #f7f7f7;
       border-radius: 20px;
