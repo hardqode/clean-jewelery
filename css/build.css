@@ -43,6 +43,173 @@ h3 {
   font-weight: bold;
   line-height: 1.2; }
 
+.catalog {
+  padding-top: 49px;
+  padding-bottom: 31px; }
+  .catalog .main-header {
+    text-align: center;
+    font-size: 36px;
+    font-family: "Circe";
+    color: #0092c5;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1;
+    padding-bottom: 43px;
+    border-bottom: 1px solid #dddddd;
+    margin-bottom: 25px; }
+  .catalog .catalog-menu .menu-row {
+    border: 1px solid #dddddd; }
+  .catalog .catalog-menu .catalog-menu-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #dddddd;
+    font-size: 24px;
+    font-family: "Circe";
+    line-height: 2;
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 10px;
+    color: #333333; }
+    .catalog .catalog-menu .catalog-menu-item img {
+      opacity: 0;
+      width: 9px;
+      height: 14px; }
+    .catalog .catalog-menu .catalog-menu-item.active {
+      color: #0092c5;
+      text-decoration: none;
+      background-color: #f2f2f2; }
+      .catalog .catalog-menu .catalog-menu-item.active img {
+        opacity: 1; }
+    .catalog .catalog-menu .catalog-menu-item:hover {
+      color: #0092c5;
+      text-decoration: none;
+      background-color: #f2f2f2; }
+      .catalog .catalog-menu .catalog-menu-item:hover img {
+        opacity: 1; }
+    .catalog .catalog-menu .catalog-menu-item:last-of-type {
+      border-bottom: 0; }
+  .catalog .catalog-grid-container .catalog-item {
+    background-color: white;
+    height: 500px;
+    text-align: center;
+    padding-top: 31px;
+    position: relative;
+    width: 270px;
+    border: 1px solid #dddddd;
+    margin-bottom: 30px;
+    margin-right: 15px; }
+    .catalog .catalog-grid-container .catalog-item:nth-of-type(3n) {
+      margin-right: 0; }
+    .catalog .catalog-grid-container .catalog-item:hover {
+      padding-top: 30px;
+      border: 1px solid #44afd4; }
+    .catalog .catalog-grid-container .catalog-item .promo-label {
+      border-radius: 100%;
+      position: absolute;
+      left: 15px;
+      top: 60px;
+      width: 53px;
+      height: 53px;
+      color: white;
+      background-color: #f99191;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      font-family: "PFAgoraSerifProB"; }
+      .catalog .catalog-grid-container .catalog-item .promo-label .sale-amount {
+        font-size: 18px;
+        margin-bottom: 0;
+        line-height: 1;
+        margin-left: -5px; }
+      .catalog .catalog-grid-container .catalog-item .promo-label .text {
+        font-size: 11px;
+        margin-bottom: 0;
+        margin-top: -16px; }
+      .catalog .catalog-grid-container .catalog-item .promo-label.new {
+        background-color: #6b6b6b;
+        font-size: 18px;
+        text-transform: uppercase; }
+    .catalog .catalog-grid-container .catalog-item h3 {
+      font-size: 24px;
+      font-family: "PFAgoraSerifProB";
+      color: black;
+      font-weight: bold;
+      line-height: 1.2;
+      margin-bottom: 0; }
+    .catalog .catalog-grid-container .catalog-item .item-img {
+      height: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end; }
+      .catalog .catalog-grid-container .catalog-item .item-img img {
+        margin: auto;
+        max-width: 100%;
+        width: 100%;
+        max-height: 100%; }
+    .catalog .catalog-grid-container .catalog-item .item-price-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 110px;
+      border-bottom: 1px solid #d0d2d7;
+      border-top: 1px solid #d0d2d7; }
+      .catalog .catalog-grid-container .catalog-item .item-price-block .old-price {
+        font-size: 24px;
+        font-family: "PFAgoraSerifProB";
+        color: #b0b0b0;
+        text-decoration: line-through;
+        line-height: 1.2;
+        text-align: center; }
+      .catalog .catalog-grid-container .catalog-item .item-price-block .price {
+        font-size: 36px;
+        font-family: "PFAgoraSerifProB";
+        color: black;
+        font-weight: bold;
+        line-height: 1.2;
+        text-align: center; }
+    .catalog .catalog-grid-container .catalog-item .item-btn-block {
+      padding-top: 21px; }
+  .catalog .pagination {
+    margin-top: 10px;
+    padding: 0;
+    display: flex; }
+    .catalog .pagination .pagination-container {
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      align-items: center; }
+      .catalog .pagination .pagination-container .arrow {
+        padding: 0;
+        border: 0;
+        margin-right: 5px;
+        margin-left: 5px;
+        border-radius: 100%;
+        width: 28px;
+        height: 28px;
+        display: flex;
+        background-color: #dddddd; }
+        .catalog .pagination .pagination-container .arrow:first-of-type {
+          padding-right: 2px; }
+        .catalog .pagination .pagination-container .arrow:last-of-type {
+          padding-left: 2px; }
+        .catalog .pagination .pagination-container .arrow img {
+          margin: auto; }
+        .catalog .pagination .pagination-container .arrow:hover {
+          background-color: #42a3cd; }
+      .catalog .pagination .pagination-container .pagination-item {
+        display: block;
+        margin-right: 5px;
+        margin-left: 5px;
+        color: #dddddd;
+        line-height: 1;
+        border-bottom: 1px solid #dddddd; }
+        .catalog .pagination .pagination-container .pagination-item:hover, .catalog .pagination .pagination-container .pagination-item.active {
+          text-decoration: none;
+          color: #42a3cd;
+          border-bottom: 0; }
+
 button {
   outline: none !important; }
 
