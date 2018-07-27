@@ -10,6 +10,9 @@ a{
 button{
   cursor: pointer !important;
 }
+input{
+  outline: none !important;
+}
 .text-deepBlue{
   color: $deepBlue;
 }

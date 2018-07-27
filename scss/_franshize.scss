@@ -1,0 +1,281 @@
+
+.franshize-header {
+  background: url("../assets/bg-franshize-header.png");
+  background-size: cover;
+  height: 637px;
+  padding-top: 101px;
+  .main-text {
+    font-size: 47px;
+    font-family: "Circe";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    margin-bottom: 34px;
+  }
+  .secondary-text {
+    font-size: 36px;
+    font-family: "Circe";
+    color: rgb(0, 146, 197);
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    .extra-bold {
+      font-weight: 900;
+    }
+  }
+  .options-text {
+    padding-left: 10px;
+    font-family: "Circe";
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    li {
+      line-height: 1.5;
+    }
+  }
+}
+
+.franshize-tiles {
+  padding-top: 73px;
+  padding-bottom: 95px;
+  .tile {
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 28px;
+    border: 1px solid rgb(221, 221, 221);
+    background: white;
+    height: 414px;
+    &:hover {
+      background: #f7f7f7;
+      border: 1px solid #f7f7f7;
+
+    }
+    .tile-img {
+      height: 170px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      padding-bottom: 38px;
+    }
+    .tile-text {
+      font-size: 24px;
+      font-family: "Circe";
+      color: rgb(0, 146, 197);
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+    .tile-subtext {
+      font-size: 14px;
+      font-family: "Circe";
+      color: rgb(51, 51, 51);
+      line-height: 1.2;
+    }
+  }
+}
+
+.franshize-opportunities {
+  padding-top: 71px;
+  padding-bottom: 77px;
+  .opportunity-items-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .opportunity-item {
+      display: flex;
+      align-items: end;
+      img {
+        margin-right: 17px;
+        margin-bottom: 10px;
+      }
+      .opportunity-item-text {
+        padding-top: 12px;
+        font-size: 18px;
+        font-family: "Circe";
+        color: rgb(51, 51, 51);
+        line-height: 1.2;
+        margin-bottom: 12px;
+      }
+    }
+
+  }
+}
+
+.franshize-formats {
+  background-color: #fbfbfb;
+  padding-top: 69px;
+}
+
+.franshize-geo {
+  padding-top: 79px;
+  padding-bottom: 56px;
+  .main-header {
+    margin-bottom: 29px;
+  }
+  .franshize-geo-img {
+    margin-bottom: 43px;
+  }
+  .franshize-geo-description {
+    font-size: 17px;
+    font-family: "Gilroy";
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+    text-align: center;
+  }
+  .geo-stats {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Circe";
+    line-height: 1.2;
+    text-align: center;
+    .num {
+      font-size: 36px;
+      &.pink {
+        color: rgb(249, 145, 145);
+      }
+      &.blue {
+        color: $blue;
+      }
+    }
+  }
+  .geo-conclusion {
+    font-size: 24px;
+    font-family: "Circe";
+    color: rgb(0, 146, 197);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
+
+.franshize-active-shops {
+  padding-top: 73px;
+  padding-bottom: 26px;
+  .franshize-active-shops-item {
+    padding-bottom: 64px;
+    .shop-geo {
+      text-align: center;
+      margin-bottom: 40px;
+      .city {
+        font-size: 24px;
+        font-family: "Circe";
+        color: rgb(51, 51, 51);
+        font-weight: bold;
+        line-height: 1.2;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+      }
+      .mall {
+        font-size: 18px;
+        font-family: "Gilroy";
+        color: rgb(0, 146, 197);
+        font-weight: bold;
+        line-height: 1.2;
+        margin-bottom: 0;
+        text-transform: uppercase;
+      }
+      .address {
+        font-size: 18px;
+        font-family: "Circe";
+        color: rgb(51, 51, 51);
+        line-height: 1;
+        margin-bottom: 0;
+      }
+    }
+    .shop-values {
+      margin-bottom: 44px;
+      .value-text {
+        font-size: 24px;
+        font-family: "Circe";
+        color: rgb(60, 60, 60);
+        font-weight: bold;
+        line-height: 1.2;
+        margin-bottom: 0;
+        text-align: left;
+
+      }
+      .num {
+        font-weight: bolder;
+        color: #0092c5;
+      }
+    }
+  }
+}
+
+.franshize-director {
+  .director-description-container {
+    max-width: 585px;
+    padding: 0;
+    .main-header {
+      text-align: left;
+      margin-bottom: 30px;
+    }
+    .sub-header {
+      font-size: 24px;
+      font-family: "Circe";
+      color: rgb(51, 51, 51);
+      font-weight: bold;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+    .director-description {
+      font-size: 18px;
+      font-family: "Gilroy";
+      color: rgb(51, 51, 51);
+      line-height: 1.2;
+    }
+  }
+
+}
+
+.checkout-franshize {
+  background-image: url('../assets/bg-franshize-email.png');
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding-top: 30px;
+  padding-bottom: 56px;
+  .franshize-email-text {
+    font-size: 30px;
+    font-family: "Circe";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .franshize-email-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    input {
+      font-family: Circe;
+      width: 294px;
+      padding-left: 18px;
+      border-radius: 23px;
+      background-color: rgb(247, 247, 247);
+      height: 47px;
+      border: 0;
+      margin-right: 15px;
+      line-height: 1.2;
+      &::placeholder {
+        font-size: 18px;
+        font-family: "Circe";
+        color: rgb(51, 51, 51);
+        line-height: 1.2;
+        position: relative;
+        top: 3px;
+      }
+    }
+    .btn-pink {
+      font-size: 18px;
+      font-family: "Circe";
+      color: rgb(255, 255, 255);
+      width: 199px;
+    }
+  }
+}

@@ -8,6 +8,9 @@ a {
 button {
   cursor: pointer !important; }
 
+input {
+  outline: none !important; }
+
 .text-deepBlue {
   color: #0092c5; }
 
@@ -49,17 +52,20 @@ h3 {
   font-weight: bold;
   line-height: 1.2; }
 
+.main-header {
+  text-align: center;
+  font-size: 36px;
+  font-family: "Circe";
+  color: #0092c5;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 41px; }
+
 .catalog {
   padding-top: 49px;
   padding-bottom: 31px; }
   .catalog .main-header {
-    text-align: center;
-    font-size: 36px;
-    font-family: "Circe";
-    color: #0092c5;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1;
     padding-bottom: 43px;
     border-bottom: 1px solid #dddddd;
     margin-bottom: 25px; }
@@ -407,15 +413,6 @@ button {
 .sales {
   padding-top: 49px;
   padding-bottom: 31px; }
-  .sales .main-header {
-    text-align: center;
-    font-size: 36px;
-    font-family: "Circe";
-    color: #0092c5;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1;
-    margin-bottom: 41px; }
   .sales .sale-promo-item {
     margin-bottom: 39px;
     height: 414px;
@@ -496,15 +493,6 @@ button {
 .magazines {
   padding-top: 49px;
   padding-bottom: 31px; }
-  .magazines .main-header {
-    text-align: center;
-    font-size: 36px;
-    font-family: "Circe";
-    color: #0092c5;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1;
-    margin-bottom: 41px; }
   .magazines .magazine-row {
     display: flex;
     flex-wrap: wrap;
@@ -1029,3 +1017,231 @@ footer {
 @font-face {
   font-family: 'PFAgoraSerifProB';
   src: url("../fonts/pfagoraserifpro-bold.ttf"); }
+.franshize-header {
+  background: url("../assets/bg-franshize-header.png");
+  background-size: cover;
+  height: 637px;
+  padding-top: 101px; }
+  .franshize-header .main-text {
+    font-size: 47px;
+    font-family: "Circe";
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    margin-bottom: 34px; }
+  .franshize-header .secondary-text {
+    font-size: 36px;
+    font-family: "Circe";
+    color: #0092c5;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 30px; }
+    .franshize-header .secondary-text .extra-bold {
+      font-weight: 900; }
+  .franshize-header .options-text {
+    padding-left: 10px;
+    font-family: "Circe";
+    color: white;
+    font-weight: 300; }
+    .franshize-header .options-text li {
+      line-height: 1.5; }
+
+.franshize-tiles {
+  padding-top: 73px;
+  padding-bottom: 95px; }
+  .franshize-tiles .tile {
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 28px;
+    border: 1px solid #dddddd;
+    background: white;
+    height: 414px; }
+    .franshize-tiles .tile:hover {
+      background: #f7f7f7;
+      border: 1px solid #f7f7f7; }
+    .franshize-tiles .tile .tile-img {
+      height: 170px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      padding-bottom: 38px; }
+    .franshize-tiles .tile .tile-text {
+      font-size: 24px;
+      font-family: "Circe";
+      color: #0092c5;
+      line-height: 1.2;
+      margin-bottom: 20px; }
+    .franshize-tiles .tile .tile-subtext {
+      font-size: 14px;
+      font-family: "Circe";
+      color: #333333;
+      line-height: 1.2; }
+
+.franshize-opportunities {
+  padding-top: 71px;
+  padding-bottom: 77px; }
+  .franshize-opportunities .opportunity-items-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .franshize-opportunities .opportunity-items-container .opportunity-item {
+      display: flex;
+      align-items: end; }
+      .franshize-opportunities .opportunity-items-container .opportunity-item img {
+        margin-right: 17px;
+        margin-bottom: 10px; }
+      .franshize-opportunities .opportunity-items-container .opportunity-item .opportunity-item-text {
+        padding-top: 12px;
+        font-size: 18px;
+        font-family: "Circe";
+        color: #333333;
+        line-height: 1.2;
+        margin-bottom: 12px; }
+
+.franshize-formats {
+  background-color: #fbfbfb;
+  padding-top: 69px; }
+
+.franshize-geo {
+  padding-top: 79px;
+  padding-bottom: 56px; }
+  .franshize-geo .main-header {
+    margin-bottom: 29px; }
+  .franshize-geo .franshize-geo-img {
+    margin-bottom: 43px; }
+  .franshize-geo .franshize-geo-description {
+    font-size: 17px;
+    font-family: "Gilroy";
+    color: #333333;
+    line-height: 1.2;
+    text-align: center; }
+  .franshize-geo .geo-stats {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Circe";
+    line-height: 1.2;
+    text-align: center; }
+    .franshize-geo .geo-stats .num {
+      font-size: 36px; }
+      .franshize-geo .geo-stats .num.pink {
+        color: #f99191; }
+      .franshize-geo .geo-stats .num.blue {
+        color: #44afd4; }
+  .franshize-geo .geo-conclusion {
+    font-size: 24px;
+    font-family: "Circe";
+    color: #0092c5;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 0; }
+
+.franshize-active-shops {
+  padding-top: 73px;
+  padding-bottom: 26px; }
+  .franshize-active-shops .franshize-active-shops-item {
+    padding-bottom: 64px; }
+    .franshize-active-shops .franshize-active-shops-item .shop-geo {
+      text-align: center;
+      margin-bottom: 40px; }
+      .franshize-active-shops .franshize-active-shops-item .shop-geo .city {
+        font-size: 24px;
+        font-family: "Circe";
+        color: #333333;
+        font-weight: bold;
+        line-height: 1.2;
+        text-transform: uppercase;
+        margin-bottom: 30px; }
+      .franshize-active-shops .franshize-active-shops-item .shop-geo .mall {
+        font-size: 18px;
+        font-family: "Gilroy";
+        color: #0092c5;
+        font-weight: bold;
+        line-height: 1.2;
+        margin-bottom: 0;
+        text-transform: uppercase; }
+      .franshize-active-shops .franshize-active-shops-item .shop-geo .address {
+        font-size: 18px;
+        font-family: "Circe";
+        color: #333333;
+        line-height: 1;
+        margin-bottom: 0; }
+    .franshize-active-shops .franshize-active-shops-item .shop-values {
+      margin-bottom: 44px; }
+      .franshize-active-shops .franshize-active-shops-item .shop-values .value-text {
+        font-size: 24px;
+        font-family: "Circe";
+        color: #3c3c3c;
+        font-weight: bold;
+        line-height: 1.2;
+        margin-bottom: 0;
+        text-align: left; }
+      .franshize-active-shops .franshize-active-shops-item .shop-values .num {
+        font-weight: bolder;
+        color: #0092c5; }
+
+.franshize-director .director-description-container {
+  max-width: 585px;
+  padding: 0; }
+  .franshize-director .director-description-container .main-header {
+    text-align: left;
+    margin-bottom: 30px; }
+  .franshize-director .director-description-container .sub-header {
+    font-size: 24px;
+    font-family: "Circe";
+    color: #333333;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px; }
+  .franshize-director .director-description-container .director-description {
+    font-size: 18px;
+    font-family: "Gilroy";
+    color: #333333;
+    line-height: 1.2; }
+
+.checkout-franshize {
+  background-image: url("../assets/bg-franshize-email.png");
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding-top: 30px;
+  padding-bottom: 56px; }
+  .checkout-franshize .franshize-email-text {
+    font-size: 30px;
+    font-family: "Circe";
+    color: white;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 25px; }
+  .checkout-franshize .franshize-email-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%; }
+    .checkout-franshize .franshize-email-form input {
+      font-family: Circe;
+      width: 294px;
+      padding-left: 18px;
+      border-radius: 23px;
+      background-color: #f7f7f7;
+      height: 47px;
+      border: 0;
+      margin-right: 15px;
+      line-height: 1.2; }
+      .checkout-franshize .franshize-email-form input::placeholder {
+        font-size: 18px;
+        font-family: "Circe";
+        color: #333333;
+        line-height: 1.2;
+        position: relative;
+        top: 3px; }
+    .checkout-franshize .franshize-email-form .btn-pink {
+      font-size: 18px;
+      font-family: "Circe";
+      color: white;
+      width: 199px; }
