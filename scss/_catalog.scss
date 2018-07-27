@@ -60,7 +60,6 @@
     .catalog-item {
       background-color: white;
       height: 500px;
-
       text-align: center;
       padding-top: 31px;
       position: relative;
@@ -72,7 +71,6 @@
         margin-right: 0;
       }
       &:hover {
-        padding-top: 30px;
         border: 1px solid $blue;
       }
       .promo-label {

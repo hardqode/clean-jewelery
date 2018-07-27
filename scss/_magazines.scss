@@ -1,0 +1,84 @@
+.magazines {
+  padding-top: 49px;
+  padding-bottom: 31px;
+  .main-header {
+    text-align: center;
+    font-size: 36px;
+    font-family: "Circe";
+    color: rgb(0, 146, 197);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 41px;
+  }
+  .magazine-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    .slider-block {
+      width: 61%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .arrow {
+        border: 0;
+        padding: 0;
+        background: transparent;
+      }
+      .slider-content {
+        width: calc(100% - 68px);
+        .owl-dots {
+          margin-top: 25px;
+          .owl-dot.active span {
+            background: $deepBlue;
+          }
+        }
+      }
+    }
+    .description-block {
+      width: 35%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-bottom: 53px;
+      h4 {
+        .city {
+          width: 100%;
+          display: block;
+        }
+        font-size: 24px;
+        font-family: "Circe";
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.2;
+        margin-bottom: 0;
+      }
+      .contacts-block {
+        .contact {
+          display: flex;
+          margin-bottom: 4px;
+          align-items: center;
+          img {
+            margin-right: 14px;
+
+          }
+          a{
+            cursor:pointer !important;
+          }
+          .contact-text {
+            font-size: 18px;
+            font-family: "Circe";
+            color: rgb(0, 0, 0);
+            line-height: 1.667;
+            &:hover{
+              color:black;
+            }
+
+          }
+        }
+      }
+    }
+  }
+}

@@ -4,7 +4,12 @@ body{
 $black:rgb(35, 34, 34);
 $blue:#44afd4;
 $deepBlue:rgb(0, 146, 197);
-
+a{
+  cursor: pointer !important;
+}
+button{
+  cursor: pointer !important;
+}
 .text-deepBlue{
   color: $deepBlue;
 }
