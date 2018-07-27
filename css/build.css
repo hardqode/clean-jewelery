@@ -399,6 +399,95 @@ button {
     .tiles .tile-item img {
       margin-bottom: 67px; }
 
+.sales {
+  padding-top: 49px;
+  padding-bottom: 31px; }
+  .sales .main-header {
+    text-align: center;
+    font-size: 36px;
+    font-family: "Circe";
+    color: #0092c5;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 41px; }
+  .sales .sale-promo-item {
+    margin-bottom: 39px;
+    height: 414px;
+    padding-right: 180px;
+    margin-left: -35px;
+    margin-right: -35px;
+    background-size: cover;
+    border: 1px solid #dddddd;
+    position: relative;
+    display: flex;
+    align-items: center; }
+    .sales .sale-promo-item .sale-floating-item {
+      position: absolute;
+      border-radius: 50%;
+      background-color: #f89c9a;
+      width: 149px;
+      height: 149px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .sales .sale-promo-item .sale-floating-item p {
+        margin-bottom: 0; }
+      .sales .sale-promo-item .sale-floating-item .text {
+        font-size: 25px;
+        font-family: "Circe";
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1;
+        text-align: center;
+        margin-bottom: 16px; }
+      .sales .sale-promo-item .sale-floating-item .value {
+        font-size: 30px;
+        font-family: "Circe";
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1;
+        text-align: center; }
+    .sales .sale-promo-item:nth-of-type(1) {
+      background-image: url("../assets/sale-promo1.png"); }
+      .sales .sale-promo-item:nth-of-type(1) .sale-floating-item {
+        bottom: 19px;
+        left: 15px; }
+    .sales .sale-promo-item:nth-of-type(2) {
+      background-image: url("../assets/sale-promo2.png"); }
+      .sales .sale-promo-item:nth-of-type(2) .sale-floating-item {
+        bottom: 19px;
+        left: 404px; }
+    .sales .sale-promo-item:nth-of-type(3) {
+      background-image: url("../assets/sale-promo3.png"); }
+      .sales .sale-promo-item:nth-of-type(3) .sale-floating-item {
+        bottom: 19px;
+        left: 15px; }
+    .sales .sale-promo-item .sale-text-block {
+      width: 242px;
+      margin-left: auto; }
+      .sales .sale-promo-item .sale-text-block h5 {
+        font-size: 24px;
+        font-family: "Circe";
+        color: black;
+        font-weight: bold;
+        line-height: 1.2;
+        margin-bottom: 30px; }
+      .sales .sale-promo-item .sale-text-block p {
+        font-family: "Circe";
+        color: black;
+        line-height: 1.2;
+        margin-bottom: 30px; }
+      .sales .sale-promo-item .sale-text-block button {
+        margin-top: 8px;
+        font-size: 18px;
+        font-family: "Circe";
+        line-height: 1; }
+
 .slider {
   background-color: #f7f7f7;
   padding-bottom: 83px; }
