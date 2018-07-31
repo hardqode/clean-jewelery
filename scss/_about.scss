@@ -45,6 +45,10 @@
 .about-quality {
   padding-top: 81px;
   padding-bottom: 85px;
+  @media (max-width:991px){
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
   background-image: url("../assets/bg-about-quality.png");
   background-size: cover;
   h3 {
@@ -61,6 +65,10 @@
 .about-proof {
   padding-top: 81px;
   padding-bottom: 85px;
+  @media (max-width:991px){
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
   h3 {
     font-family: Circe;
     margin-bottom: 33px;
@@ -75,6 +83,10 @@
   padding-bottom: 78px;
   background-image: url('../assets/bg-about-individuality.png');
   background-size: cover;
+  @media (max-width:991px){
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
   h3 {
     font-family: Circe;
     margin-bottom: 33px;
@@ -85,6 +97,9 @@
   .about-description {
     padding-left: 15px;
     width: 417px;
+    @media (max-width:991px){
+      width: 100%;
+    }
 
   }
 }

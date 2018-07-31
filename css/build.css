@@ -63,6 +63,9 @@ h3 {
   text-transform: uppercase;
   line-height: 1;
   margin-bottom: 41px; }
+  @media (max-width: 991px) {
+    .main-header {
+      font-size: 26px; } }
 
 .catalog {
   padding-top: 49px;
@@ -431,6 +434,10 @@ button {
   padding-bottom: 85px;
   background-image: url("../assets/bg-about-quality.png");
   background-size: cover; }
+  @media (max-width: 991px) {
+    .about-quality {
+      padding-top: 30px;
+      padding-bottom: 30px; } }
   .about-quality h3 {
     font-family: Circe;
     margin-bottom: 33px; }
@@ -441,6 +448,10 @@ button {
 .about-proof {
   padding-top: 81px;
   padding-bottom: 85px; }
+  @media (max-width: 991px) {
+    .about-proof {
+      padding-top: 30px;
+      padding-bottom: 30px; } }
   .about-proof h3 {
     font-family: Circe;
     margin-bottom: 33px; }
@@ -452,6 +463,10 @@ button {
   padding-bottom: 78px;
   background-image: url("../assets/bg-about-individuality.png");
   background-size: cover; }
+  @media (max-width: 991px) {
+    .about-individuality {
+      padding-top: 30px;
+      padding-bottom: 30px; } }
   .about-individuality h3 {
     font-family: Circe;
     margin-bottom: 33px; }
@@ -460,6 +475,9 @@ button {
   .about-individuality .about-description {
     padding-left: 15px;
     width: 417px; }
+    @media (max-width: 991px) {
+      .about-individuality .about-description {
+        width: 100%; } }
 
 .tiles {
   padding-top: 124px;
