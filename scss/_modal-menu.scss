@@ -1,0 +1,34 @@
+.mobile-modal-menu-container {
+  padding-top: 9px;
+  padding-right: 10px;
+  padding-left: 51px;
+  margin: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  .btn-menu{
+    margin-bottom: 62px;
+    text-align: right;
+  }
+  .menu-name {
+    font-size: 18px;
+    font-family: "Circe";
+    font-weight: 300;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .menu-list{
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 25px;
+    a{
+      font-size: 14px;
+      font-family: "Circe";
+      font-weight: 300;
+      color:white;
+    }
+  }
+}

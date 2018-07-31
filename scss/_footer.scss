@@ -1,7 +1,21 @@
 footer {
   height: 370px;
   background-image: url("../assets/bg-footer.png");
+
+  @media(max-width: 991px) {
+    background-image: url("../assets/bg-footer-mobile.png");
+
+    height: 575px;
+    background-size: cover;
+    padding-top: 29px;
+    padding-bottom: 95px;
+  }
   padding-top: 75px;
+  .pic-block {
+    @media(max-width: 991px) {
+      margin-bottom: 60px;
+    }
+  }
   .copyright {
     font-size: 12px;
     line-height: 1.2;
@@ -14,16 +28,22 @@ footer {
     font-size: 18px;
     color: rgb(51, 51, 51);
     line-height: 1.2;
-    font-family: 'PFAgoraSerifProB', sans-serif;
+    font-family: 'Circe', sans-serif;
+    //font-weight: bold;
   }
   .footer-menu {
+
     .footer-menu--name {
       font-size: 18px;
       color: rgb(51, 51, 51);
-      font-family: 'PFAgoraSerifProB', sans-serif;
+      font-family: 'Circe', sans-serif;
+      font-weight: bold;
       line-height: 1.2;
       text-transform: uppercase;
       margin-bottom: 8px;
+      @media(max-width: 991px) {
+        text-align: center;
+      }
     }
     .footer-menu--item {
       color: rgb(51, 51, 51);
@@ -39,14 +59,20 @@ footer {
     display: flex;
     margin-bottom: 31px;
     margin-top: 16px;
-    .payment-item{
+    @media(max-width: 991px) {
+      justify-content: center;
+    }
+    .payment-item {
       border-radius: 20px;
       background-color: rgb(255, 255, 255);
       width: 97px;
       height: 41px;
       margin-right: 25px;
+      &:last-of-type {
+        margin-right: 0;
+      }
       display: flex;
-      img{
+      img {
         margin: auto;
       }
     }

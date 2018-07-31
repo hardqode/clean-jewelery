@@ -216,6 +216,9 @@
 }
 
 .header-slider {
+  @media (max-width:991px){
+    display: none;
+  }
   position: relative;
   .slider-arrow {
     z-index: 3;
@@ -357,6 +360,25 @@
           margin-right: auto;
           max-height: initial;
         }
+      }
+    }
+  }
+}
+
+.mobile-header-slider-section{
+  @media (min-width:992px){
+    display: none;
+  }
+  .owl-dots {
+    transform: translateY(-40px);
+    .owl-dot {
+      &.active {
+        span {
+          background: $deepBlue;
+        }
+      }
+      span {
+        background: white;
       }
     }
   }

@@ -19,7 +19,7 @@
           &:before{
             content: '';
             position: absolute;
-            top: -12px;
+            top: -8px;
             width: 100%;
             background: $blue;
             height: 1px;
@@ -30,7 +30,7 @@
           &:after{
             content: '';
             position: absolute;
-            bottom: -12px;
+            bottom: -9px;
             left: 0;
             right: 0;
             margin: auto;

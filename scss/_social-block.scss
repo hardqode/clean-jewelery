@@ -1,6 +1,9 @@
 .social-block {
   display: flex;
   margin-top: 16px;
+  @media(max-width: 991px) {
+    justify-content: center;
+  }
   .social-block-item {
     margin-right: 6px;
     width: 24px;

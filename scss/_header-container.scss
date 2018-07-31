@@ -1,12 +1,18 @@
 .header-container {
   padding-top: 10px;
   padding-bottom: 25px;
+
+  @media(max-width: 991px) {
+    padding-bottom: 8px;
+    padding-top: 24px;
+    border-bottom: 0;
+  }
   border-bottom: 1px solid rgb(175, 175, 175);
-  p{
+  p {
     margin-bottom: 0;
     line-height: 1;
   }
-  .row > .col-auto{
+  .row > .col-auto {
     padding: 0;
   }
   .icon {
@@ -22,6 +28,11 @@
   }
   .city-block {
     display: flex;
+    @media(max-width: 991px) {
+      margin-bottom: 36px;
+      justify-content: center;
+
+    }
     .name {
       font-size: 18px;
       color: rgb(35, 34, 34);
@@ -44,13 +55,25 @@
     flex-wrap: wrap;
     text-align: center;
   }
+  .logo {
+    @media(max-width: 991px) {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+  }
   .phone-block {
     display: flex;
-    p{
+
+    @media(max-width: 991px) {
+      margin-bottom: 36px;
+      justify-content: center;
+    }
+    p {
       text-align: left;
     }
     .phone {
       font-size: 24px;
+      font-weight: bold;
       color: rgb(35, 34, 34);
       line-height: 1.25;
     }
@@ -61,5 +84,32 @@
       line-height: 1;
       margin-bottom: 0;
     }
+  }
+}
+
+.mobile-menu-container {
+  display: none;
+  @media(max-width: 991px) {
+    display: block;
+  }
+  .mobile-menu {
+    align-items: center;
+    background-color: rgb(247, 249, 252);
+    height: 44px;
+    padding-left: 13px;
+    padding-right: 6px;
+    .button.btn-blue {
+      img {
+        margin-right: 20px;
+      }
+      padding-top: 7px;
+      padding-bottom: 7px;
+      font-size: 14px;
+      font-family: "Gilroy";
+      font-weight: 300;
+      color: rgb(255, 255, 255);
+      line-height: 1.2;
+    }
+
   }
 }

@@ -17,9 +17,50 @@
 </head>
 <body>
 <section>
+    <div class="container-fluid mobile-menu-container">
+        <div class="row mobile-menu">
+            <div class="col-auto px-0">
+                <button class="btn-menu" data-toggle="modal" data-target="#mobile-modal-menu">
+                    <img src="./assets/icon-menu.png" width="25" alt="">
+                </button>
+                <div class="modal fade" tabindex="-1" role="dialog" id="mobile-modal-menu">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content mobile-modal-menu-container">
+                            <button class="btn-menu" data-dismiss="modal" >
+                                <img src="./assets/icon-x.png" width="12" alt="">
+                            </button>
+                            <p class="menu-name">О компании</p>
+                            <ul class="menu-list">
+                                <li><a href="catalog.html">Каталог продукции</a></li>
+                                <li><a href="about.html">О компании</a></li>
+                                <li><a href="sales.html">Акции</a></li>
+                                <li><a href="franshize.html">Франшиза</a></li>
+                                <li><a href="magazines.html">Фирменные магазины</a></li>
+                                <li><a href="#">Политика конфиденциальности</a></li>
+                            </ul>
+                            <p class="menu-name">Украшения</p>
+                            <ul class="menu-list">
+                                <li><a href="catalog.html">Каталог продукции</a></li>
+                                <li><a href="about.html">О компании</a></li>
+                                <li><a href="sales.html">Акции</a></li>
+                                <li><a href="franshize.html">Франшиза</a></li>
+                                <li><a href="magazines.html">Фирменные магазины</a></li>
+                                <li><a href="#">Политика конфиденциальности</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-auto ml-auto px-0">
+                <button class="button btn-blue"><img src="./assets/icon-btn-phone.png" height="15" alt="">Позвонить
+                </button>
+            </div>
+        </div>
+    </div>
     <div class="container-fluid header-container">
         <div class="row justify-content-around align-items-center">
-            <div class="col-auto">
+            <div class="col-12 col-lg-auto order-1 order-lg-0">
                 <div class="city-block">
                     <div class="icon">
                         <img src="./assets/icon-geo.png" alt="">
@@ -33,7 +74,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-auto">
+            <div class="col-12 col-lg-auto order-2 order-lg-1">
                 <div class="phone-block ">
                     <div class="icon">
                         <img src="./assets/icon-phone.png" alt="" height="16">
@@ -48,10 +89,10 @@
                 </div>
 
             </div>
-            <div class="col-auto">
+            <div class="col-12 col-lg-auto logo order-0 order-lg-2">
                 <img src="./assets/logo@2x.png" alt="" width="196">
             </div>
-            <div class="col-auto">
+            <div class="col-12 col-lg-auto text-center order-3 order-lg-3">
                 <div class="phone-block ">
                     <div class="icon">
                         <img src="./assets/icon-phone.png" alt="" height="16">
@@ -67,12 +108,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col-auto">
+            <div class="col-auto d-none d-lg-block order-lg-4">
                 <button class="button btn-blue">Заказать звонок</button>
             </div>
         </div>
     </div>
-    <div class="container top-nav">
+    <div class="container top-nav d-none d-xl-block">
         <div class="row top-nav--row">
             <div class="col-auto top-nav--item"><a href="index.html">Главная</a></div>
             <div class="col-auto top-nav--item"><a href="catalog.html">Каталог продукции</a></div>
@@ -80,6 +121,19 @@
             <div class="col-auto top-nav--item"><a href="sales.html">Акции</a></div>
             <div class="col-auto top-nav--item"><a href="franshize.html">Франшиза</a></div>
             <div class="col-auto top-nav--item"><a href="magazines.html">Фирменные магазины</a></div>
+        </div>
+    </div>
+</section>
+<section class="mobile-header-slider-section">
+    <div class="owl-theme owl-carousel mobile-header-slider">
+        <div>
+            <img src="./assets/mobile-header-slider/1.png" alt="">
+        </div>
+        <div>
+            <img src="./assets/mobile-header-slider/1.png" alt="">
+        </div>
+        <div>
+            <img src="./assets/mobile-header-slider/1.png" alt="">
         </div>
     </div>
 </section>
