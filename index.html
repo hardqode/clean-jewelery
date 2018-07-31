@@ -26,7 +26,7 @@
                 <div class="modal fade" tabindex="-1" role="dialog" id="mobile-modal-menu">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content mobile-modal-menu-container">
-                            <button class="btn-menu" data-dismiss="modal" >
+                            <button class="btn-menu" data-dismiss="modal">
                                 <img src="./assets/icon-x.png" width="12" alt="">
                             </button>
                             <p class="menu-name">О компании</p>
@@ -65,13 +65,47 @@
                     <div class="icon">
                         <img src="./assets/icon-geo.png" alt="">
                     </div>
-                    <div class="content">
-                        <p><span class="name">Город <a href="#">Казань</a></span>
+                    <div class="content content-city">
+                        <div><span class="name">Город <a href="#">Казань</a></span>
                             <br>
-                            <a href="#" class="change-city">Сменить город<img src="./assets/angle-down.png" alt=""></a>
-                        </p>
+                            <span class="change-city" role="button" data-toggle="modal"
+                                  data-target="#change-city-modal">Сменить город<img src="./assets/angle-down.png"
+                                                                                     alt="">
+                            </span>
+                        </div>
 
+                        <div class="modal fade " tabindex="-1" role="dialog" id="change-city-modal">
+                            <div class="modal-dialog city-modal " role="document">
+                                <div class="modal-content custom-modal city">
+                                    <div class="custom-modal-container">
+                                        <div class="w-100 d-flex">
+                                            <button class="btn-menu ml-auto" data-dismiss="modal">
+                                                <img src="./assets/icon-x-gray.png" width="24" alt="">
+                                            </button>
+                                        </div>
+
+                                        <h2 class="main-header text-center">Выбрать город</h2>
+                                        <input type="text" placeholder="Город">
+                                        <span class="text-support">Например Москва или Санкт-Петербург</span>
+                                        <button class="button btn-blue">Сохранить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="change-city-popup d-none d-lg-flex" id="change-city-pop">
+                            <span>Ваш город <strong>Казань</strong>?</span>
+                            <span>
+                                <button class="button btn-blue"
+                                        onclick="document.getElementById('change-city-pop').remove()">Да</button>
+                                <button class="button outline-gray"
+                                        onclick="document.getElementById('change-city-pop').remove()"
+                                        data-toggle="modal"
+                                        data-target="#change-city-modal">Сменить город</button>
+                            </span>
+                        </div>
                     </div>
+
                 </div>
             </div>
             <div class="col-12 col-lg-auto order-2 order-lg-1">
@@ -109,7 +143,28 @@
                 </div>
             </div>
             <div class="col-auto d-none d-lg-block order-lg-4">
-                <button class="button btn-blue">Заказать звонок</button>
+                <button class="button btn-blue" data-toggle="modal" data-target="#order-call">Заказать звонок</button>
+                <div class="modal fade " tabindex="-1" role="dialog" id="order-call">
+                    <div class="modal-dialog call-modal " role="document">
+                        <div class="modal-content custom-modal call">
+                            <div class="custom-modal-container">
+                                <div class="w-100 d-flex">
+                                    <button class="btn-menu ml-auto" data-dismiss="modal">
+                                        <img src="./assets/icon-x-gray.png" width="24" alt="">
+                                    </button>
+                                </div>
+
+                                <h2 class="main-header text-center">Заказать звонок</h2>
+                                <input type="text" placeholder="Ваше имя">
+                                <input type="text" placeholder="Ваш телефон">
+                                <input type="text" placeholder="e-mail">
+                                <button class="button btn-blue" data-dismiss="modal">Отправить</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
         </div>
     </div>
@@ -582,20 +637,20 @@
         mobileHeaderSlider = $('.mobile-header-slider');
 
     jewelerySlider.owlCarousel({
-        responsive:{
-            0:{
+        responsive: {
+            0: {
                 dots: true,
                 items: 1,
                 margin: 0,
                 loop: true,
             },
-            768:{
+            768: {
                 dots: true,
                 items: 2,
                 margin: 16,
                 loop: true,
             },
-            992:{
+            992: {
                 dots: true,
                 items: 4,
                 margin: 16,
@@ -612,20 +667,20 @@
 
 
     hitsSlider.owlCarousel({
-        responsive:{
-            0:{
+        responsive: {
+            0: {
                 dots: true,
                 items: 1,
                 margin: 0,
                 loop: true,
             },
-            768:{
+            768: {
                 dots: true,
                 items: 2,
                 margin: 16,
                 loop: true,
             },
-            992:{
+            992: {
                 dots: true,
                 items: 4,
                 margin: 16,
