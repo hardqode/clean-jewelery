@@ -1268,6 +1268,11 @@ footer {
   background-size: cover;
   height: 637px;
   padding-top: 101px; }
+  @media (max-width: 991px) {
+    .franshize-header {
+      height: auto;
+      -ms-background-position-x: 20%;
+      background-position-x: 20%; } }
   .franshize-header .main-text {
     font-size: 47px;
     font-family: "Circe";
@@ -1277,6 +1282,9 @@ footer {
     line-height: 1.2;
     text-align: left;
     margin-bottom: 34px; }
+    @media (max-width: 991px) {
+      .franshize-header .main-text {
+        font-size: 37px; } }
   .franshize-header .secondary-text {
     font-size: 36px;
     font-family: "Circe";
@@ -1284,6 +1292,9 @@ footer {
     font-weight: 400;
     line-height: 1.2;
     margin-bottom: 30px; }
+    @media (max-width: 991px) {
+      .franshize-header .secondary-text {
+        font-size: 26px; } }
     .franshize-header .secondary-text .extra-bold {
       font-weight: 900; }
   .franshize-header .options-text {
@@ -1305,6 +1316,12 @@ footer {
     border: 1px solid #dddddd;
     background: white;
     height: 414px; }
+    @media (max-width: 768px) {
+      .franshize-tiles .tile {
+        height: 414px; } }
+    @media (max-width: 991px) {
+      .franshize-tiles .tile {
+        height: 430px; } }
     .franshize-tiles .tile:hover {
       background: #f7f7f7;
       border: 1px solid #f7f7f7; }
@@ -1425,6 +1442,12 @@ footer {
         line-height: 1.2;
         margin-bottom: 0;
         text-align: left; }
+        @media (max-width: 768px) {
+          .franshize-active-shops .franshize-active-shops-item .shop-values .value-text {
+            font-size: 18px; } }
+        @media (max-width: 991px) {
+          .franshize-active-shops .franshize-active-shops-item .shop-values .value-text {
+            font-size: 20px; } }
       .franshize-active-shops .franshize-active-shops-item .shop-values .num {
         font-weight: bolder;
         color: #0092c5; }
@@ -1432,6 +1455,9 @@ footer {
 .franshize-director .director-description-container {
   max-width: 585px;
   padding: 0; }
+  @media (max-width: 991px) {
+    .franshize-director .director-description-container {
+      padding: 24px 15px; } }
   .franshize-director .director-description-container .main-header {
     text-align: left;
     margin-bottom: 30px; }
@@ -1462,6 +1488,9 @@ footer {
     line-height: 1.2;
     text-align: center;
     margin-bottom: 25px; }
+    @media (max-width: 991px) {
+      .checkout-franshize .franshize-email-text {
+        font-size: 24px; } }
   .checkout-franshize .franshize-email-form {
     display: flex;
     justify-content: space-between;
@@ -1469,6 +1498,10 @@ footer {
     padding-left: 15px;
     padding-right: 15px;
     width: 100%; }
+    @media (max-width: 991px) {
+      .checkout-franshize .franshize-email-form {
+        justify-content: center;
+        flex-wrap: wrap; } }
     .checkout-franshize .franshize-email-form input {
       font-family: Circe;
       width: 294px;
@@ -1479,6 +1512,11 @@ footer {
       border: 0;
       margin-right: 15px;
       line-height: 1.2; }
+      @media (max-width: 991px) {
+        .checkout-franshize .franshize-email-form input {
+          width: 100%;
+          margin-bottom: 16px;
+          margin-right: 0; } }
       .checkout-franshize .franshize-email-form input::placeholder {
         font-size: 18px;
         font-family: "Circe";

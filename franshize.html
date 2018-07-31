@@ -17,9 +17,50 @@
 </head>
 <body>
 <section>
+    <div class="container-fluid mobile-menu-container">
+        <div class="row mobile-menu">
+            <div class="col-auto px-0">
+                <button class="btn-menu" data-toggle="modal" data-target="#mobile-modal-menu">
+                    <img src="./assets/icon-menu.png" width="25" alt="">
+                </button>
+                <div class="modal fade" tabindex="-1" role="dialog" id="mobile-modal-menu">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content mobile-modal-menu-container">
+                            <button class="btn-menu" data-dismiss="modal" >
+                                <img src="./assets/icon-x.png" width="12" alt="">
+                            </button>
+                            <p class="menu-name">О компании</p>
+                            <ul class="menu-list">
+                                <li><a href="catalog.html">Каталог продукции</a></li>
+                                <li><a href="about.html">О компании</a></li>
+                                <li><a href="sales.html">Акции</a></li>
+                                <li><a href="franshize.html">Франшиза</a></li>
+                                <li><a href="magazines.html">Фирменные магазины</a></li>
+                                <li><a href="#">Политика конфиденциальности</a></li>
+                            </ul>
+                            <p class="menu-name">Украшения</p>
+                            <ul class="menu-list">
+                                <li><a href="catalog.html">Каталог продукции</a></li>
+                                <li><a href="about.html">О компании</a></li>
+                                <li><a href="sales.html">Акции</a></li>
+                                <li><a href="franshize.html">Франшиза</a></li>
+                                <li><a href="magazines.html">Фирменные магазины</a></li>
+                                <li><a href="#">Политика конфиденциальности</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-auto ml-auto px-0">
+                <button class="button btn-blue"><img src="./assets/icon-btn-phone.png" height="15" alt="">Позвонить
+                </button>
+            </div>
+        </div>
+    </div>
     <div class="container-fluid header-container">
         <div class="row justify-content-around align-items-center">
-            <div class="col-auto">
+            <div class="col-12 col-lg-auto order-1 order-lg-0">
                 <div class="city-block">
                     <div class="icon">
                         <img src="./assets/icon-geo.png" alt="">
@@ -33,7 +74,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-auto">
+            <div class="col-12 col-lg-auto order-2 order-lg-1">
                 <div class="phone-block ">
                     <div class="icon">
                         <img src="./assets/icon-phone.png" alt="" height="16">
@@ -48,10 +89,10 @@
                 </div>
 
             </div>
-            <div class="col-auto">
+            <div class="col-12 col-lg-auto logo order-0 order-lg-2">
                 <img src="./assets/logo@2x.png" alt="" width="196">
             </div>
-            <div class="col-auto">
+            <div class="col-12 col-lg-auto text-center order-3 order-lg-3">
                 <div class="phone-block ">
                     <div class="icon">
                         <img src="./assets/icon-phone.png" alt="" height="16">
@@ -67,12 +108,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col-auto">
+            <div class="col-auto d-none d-lg-block order-lg-4">
                 <button class="button btn-blue">Заказать звонок</button>
             </div>
         </div>
     </div>
-    <div class="container top-nav">
+    <div class="container top-nav d-none d-xl-block">
         <div class="row top-nav--row">
             <div class="col-auto top-nav--item"><a href="index.html">Главная</a></div>
             <div class="col-auto top-nav--item"><a href="catalog.html">Каталог продукции</a></div>
@@ -87,7 +128,7 @@
 <section class="franshize-header">
     <div class="container">
         <div class="row">
-            <div class="col-7">
+            <div class="col-12 col-lg-7">
                 <p class="main-text">ОТКРОЙТЕ СОБСТВЕННЫЙ
                     МАГАЗИН ЮВЕЛИРНЫХ
                     УКРАШЕНИЙ</p>
@@ -113,8 +154,9 @@
                     в течение 15 мин в pdf</h4>
             </div>
             <div class="franshize-email-form">
-                <input type="text" placeholder="Имя*"><input type="text" placeholder="Телефон*"><input type="text"
-                                                                                                       placeholder="Ваша электронная почта*">
+                <input type="text" placeholder="Имя*">
+                <input type="text" placeholder="Телефон*">
+                <input type="text" placeholder="Ваша электронная почта*">
                 <button class="button btn-pink">Скачать</button>
             </div>
         </div>
@@ -124,12 +166,12 @@
 <section class="franshize-tiles">
     <div class="container">
         <div class="row">
-            <div class="col-8 mx-auto">
+            <div class="col-12 col-lg-8 mx-auto">
                 <h3 class="main-header">ПОЧЕМУ НУЖНО ВКЛАДЫВАТЬ ДЕНЬГИ В «ЧИСТОЕ СЕРЕБРО»</h3>
             </div>
         </div>
         <div class="row">
-            <div class="col-4">
+            <div class="col-12 col-md-6 col-lg-4">
                 <div class="tile">
                     <div class="tile-img">
                         <img src="./assets/franshize-tiles/1.png" width="95" alt="">
@@ -140,7 +182,7 @@
                         заниматься своими делами, отдыхать и при это зарабатывать от 150 000 рублей ежемесячно .</p>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-6 col-lg-4">
                 <div class="tile">
                     <div class="tile-img">
                         <img src="./assets/franshize-tiles/2.png" width="98" alt="">
@@ -153,7 +195,7 @@
                         украшений по мерчендайзингу.</p>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-6 col-lg-4">
                 <div class="tile">
                     <div class="tile-img">
                         <img src="./assets/franshize-tiles/3.png" width="86" alt="">
@@ -163,7 +205,7 @@
                         места для торговой точки, проводим переговоры с арендодателями о выгодных условиях.</p>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-6 col-lg-4">
                 <div class="tile">
                     <div class="tile-img">
                         <img src="./assets/franshize-tiles/4.png" width="128" alt="">
@@ -173,7 +215,7 @@
                         продавцов.</p>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-6 col-lg-4">
                 <div class="tile">
                     <div class="tile-img">
                         <img src="./assets/franshize-tiles/5.png" width="96" alt="">
@@ -183,7 +225,7 @@
                         Гарантии прописываем в договоре</p>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-6 col-lg-4">
                 <div class="tile">
                     <div class="tile-img">
                         <img src="./assets/franshize-tiles/6.png" width="82" alt="">
@@ -218,7 +260,7 @@
             <div class="col-12">
                 <h3 class="main-header">ПРИОБРЕТАЯ НАШУ ФРАНШИЗУ ВЫ ПОЛУЧАЕТЕ</h3>
             </div>
-            <div class="col-6 opportunity-items-container">
+            <div class="col-12 col-md-6 opportunity-items-container">
                 <div class="opportunity-item">
                     <img src="./assets/franshize-opportunity-icon.png" width="36" alt="">
                     <p class="opportunity-item-text">Ежемесячную чистую прибыль от 150 000 рублей</p>
@@ -252,7 +294,7 @@
                         зарегистрированным товарным знаком «Чистое серебро»</p>
                 </div>
             </div>
-            <div class="col-6 opportunity-items-container">
+            <div class="col-12 col-md-6 opportunity-items-container">
 
                 <div class="opportunity-item">
                     <img src="./assets/franshize-opportunity-icon.png" width="36" alt="">
@@ -297,13 +339,13 @@
             </div>
         </div>
         <div class="row">
-            <div class="col px-0 franshize-format-item"><img src="./assets/franshize-business-formats/1.png" alt=""
+            <div class="col-12 col-md-6 col-lg px-0 franshize-format-item"><img src="./assets/franshize-business-formats/1.png" alt=""
                                                              class="img-fluid"></div>
-            <div class="col px-0 franshize-format-item"><img src="./assets/franshize-business-formats/2.png" alt=""
+            <div class="col-12 col-md-6 col-lg px-0 franshize-format-item"><img src="./assets/franshize-business-formats/2.png" alt=""
                                                              class="img-fluid"></div>
-            <div class="col px-0 franshize-format-item"><img src="./assets/franshize-business-formats/3.png" alt=""
+            <div class="col-12 col-md-6 col-lg px-0 franshize-format-item"><img src="./assets/franshize-business-formats/3.png" alt=""
                                                              class="img-fluid"></div>
-            <div class="col px-0 franshize-format-item"><img src="./assets/franshize-business-formats/4.png" alt=""
+            <div class="col-12 col-md-6 col-lg px-0 franshize-format-item"><img src="./assets/franshize-business-formats/4.png" alt=""
                                                              class="img-fluid"></div>
         </div>
     </div>
@@ -315,10 +357,10 @@
             <div class="col-12">
                 <h3 class="main-header">МЫ УЖЕ УСПЕШНО РАБОТАЕМ В 11 ГОРОДАХ РОССИИ</h3>
             </div>
-            <div class="col-auto mx-auto franshize-geo-img">
-                <img src="./assets/franshize-geo.png" alt="">
+            <div class="col-12 col-lg-auto px-0 mx-auto franshize-geo-img">
+                <img src="./assets/franshize-geo.png" alt="" class="img-fluid">
             </div>
-            <div class="col-6 mx-auto px-0">
+            <div class="col-12 col-lg-6 mx-auto px-lg-0">
                 <p class="franshize-geo-description">Москва, Мытищи, Казань, Набережные Челны, Альметьевск, Самара,
                     Тюмень, Сочи, Чебоксары, Краснодар, Санкт Петербург</p>
                 <p class="geo-stats"><span class="num pink">12 </span>собственных, <span class="num blue">5 </span>
@@ -364,7 +406,7 @@
                         <p class="mall">ТЦ Панорама</p>
                         <p class="address">Ул. Ленина, 100</p>
                     </div>
-                    <div class="col-7 mx-auto text-left shop-values">
+                    <div class="col-12 col-md-9 col-lg-7 mx-auto text-left shop-values">
                         <p class="value-text"> Население города Альметьевск —
                             <span class="num">154 000</span> человек
                         </p>
@@ -375,8 +417,8 @@
                             <span class="num">186 000</span> руб.</p>
                     </div>
                     <div class="w-100"></div>
-                    <div class="col-6"><img src="./assets/franshize-shop-1.png" alt="" class="img-fluid"></div>
-                    <div class="col-6"><img src="./assets/franshize-shop-2.png" alt="" class="img-fluid"></div>
+                    <div class="col-12 col-md-6"><img src="./assets/franshize-shop-1.png" alt="" class="img-fluid"></div>
+                    <div class="col-12 col-md-6"><img src="./assets/franshize-shop-2.png" alt="" class="img-fluid"></div>
                 </div>
             </div>
             <div class="col-12 franshize-active-shops-item">
@@ -386,8 +428,8 @@
                         <p class="mall">ТЦ Парк Хаус</p>
                         <p class="address">Ул. Ямашева, 46</p>
                     </div>
-                    <div class="col-7 mx-auto text-left shop-values">
-                        <p class="value-text">Население города Казани —
+                    <div class="col-12 col-md-9 col-lg-7 mx-auto text-left shop-values">
+                        <p class="value-text">Население города Казани — <br class="d-md-none">
                             <span class="num">1 232 000</span> человек
                         </p>
                         <p class="value-text">Средний ежемесячный оборот магазина —
@@ -397,8 +439,8 @@
                             <span class="num">196 000</span> руб.</p>
                     </div>
                     <div class="w-100"></div>
-                    <div class="col-6"><img src="./assets/franshize-shop-1.png" alt="" class="img-fluid"></div>
-                    <div class="col-6"><img src="./assets/franshize-shop-2.png" alt="" class="img-fluid"></div>
+                    <div class="col-12 col-md-6"><img src="./assets/franshize-shop-1.png" alt="" class="img-fluid"></div>
+                    <div class="col-12 col-md-6"><img src="./assets/franshize-shop-2.png" alt="" class="img-fluid"></div>
                 </div>
             </div>
             <div class="col-12 franshize-active-shops-item">
@@ -408,8 +450,8 @@
                         <p class="mall">ТЦ Парк Хаус</p>
                         <p class="address">Ул. Ямашева, 46</p>
                     </div>
-                    <div class="col-7 mx-auto text-left shop-values">
-                        <p class="value-text">Население города Казани —
+                    <div class="col-12 col-md-9 col-lg-7 mx-auto text-left shop-values">
+                        <p class="value-text">Население города Казани — <br class="d-md-none">
                             <span class="num">1 232 000</span> человек
                         </p>
                         <p class="value-text">Средний ежемесячный оборот магазина —
@@ -419,8 +461,8 @@
                             <span class="num">196 000</span> руб.</p>
                     </div>
                     <div class="w-100"></div>
-                    <div class="col-6"><img src="./assets/franshize-shop-1.png" alt="" class="img-fluid"></div>
-                    <div class="col-6"><img src="./assets/franshize-shop-2.png" alt="" class="img-fluid"></div>
+                    <div class="col-12 col-md-6"><img src="./assets/franshize-shop-1.png" alt="" class="img-fluid"></div>
+                    <div class="col-12 col-md-6"><img src="./assets/franshize-shop-2.png" alt="" class="img-fluid"></div>
                 </div>
             </div>
         </div>
@@ -446,10 +488,10 @@
 <section class="franshize-director">
     <div class="container-fluid">
         <div class="row align-items-center">
-            <div class="col-6 pl-0">
+            <div class="col-12 col-lg-6 px-0 pr-lg-3">
                 <img src="./assets/franshize-director.png" alt="" class="img-fluid">
             </div>
-            <div class="col-6 director-description-container">
+            <div class="col-12 col-lg-6 director-description-container">
                 <h3 class="main-header">
                     Писаренко Иван
                 </h3>
@@ -474,13 +516,13 @@
 <footer>
     <div class="container">
         <div class="row justify-content-between align-items-center">
-            <div class="col-auto text-center">
+            <div class="col-12 col-lg-auto text-center pic-block">
                 <img src="./assets/logo@2x.png" width="196" alt="" class="logo">
                 <p class="copyright">© 2018 год АО «Чистое Серебро»</p>
                 <p><a href="tel:7 (800) 775-68-37" class="phone">7 (800) 775-68-37</a></p>
                 <button class="button btn-blue">Заказать звонок</button>
             </div>
-            <div class="col-auto">
+            <div class="col-auto d-none d-lg-block">
                 <div class="footer-menu">
                     <p class="footer-menu--name">О компании</p>
                     <a href="#" class="footer-menu--item">Каталог продукции</a>
@@ -491,7 +533,7 @@
                     <a href="#" class="footer-menu--item">Политика конфиденциальности</a>
                 </div>
             </div>
-            <div class="col-auto">
+            <div class="col-auto d-none d-lg-block">
                 <div class="footer-menu">
                     <p class="footer-menu--name">Украшения</p>
                     <a href="#" class="footer-menu--item">Кольца</a>
@@ -502,7 +544,7 @@
                     <a href="#" class="footer-menu--item">Другое</a>
                 </div>
             </div>
-            <div class="col-auto">
+            <div class="col-12 col-lg-auto">
                 <div class="footer-menu">
                     <p class="footer-menu--name">Способ оплаты</p>
                     <div class="payment-block">
@@ -539,6 +581,7 @@
         </div>
     </div>
 </footer>
+
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
