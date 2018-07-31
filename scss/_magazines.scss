@@ -1,7 +1,10 @@
 .magazines {
   padding-top: 49px;
   padding-bottom: 31px;
-
+  @media(max-width:991px){
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
   .magazine-row {
     display: flex;
     flex-wrap: wrap;
@@ -12,6 +15,10 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      @media(max-width:991px){
+        width: 100%;
+        order: 2;
+      }
       .arrow {
         border: 0;
         padding: 0;
@@ -29,6 +36,12 @@
     }
     .description-block {
       width: 35%;
+      @media(max-width:991px){
+        width: auto;
+        padding-left: 30px;
+        padding-right: 30px;
+        order: 0;
+      }
       display: flex;
       flex-direction: column;
       justify-content: space-between;

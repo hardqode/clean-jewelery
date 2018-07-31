@@ -613,6 +613,10 @@ button {
 .magazines {
   padding-top: 49px;
   padding-bottom: 31px; }
+  @media (max-width: 991px) {
+    .magazines {
+      padding-top: 30px;
+      padding-bottom: 30px; } }
   .magazines .magazine-row {
     display: flex;
     flex-wrap: wrap;
@@ -623,6 +627,10 @@ button {
       display: flex;
       justify-content: space-between;
       align-items: center; }
+      @media (max-width: 991px) {
+        .magazines .magazine-row .slider-block {
+          width: 100%;
+          order: 2; } }
       .magazines .magazine-row .slider-block .arrow {
         border: 0;
         padding: 0;
@@ -639,6 +647,12 @@ button {
       flex-direction: column;
       justify-content: space-between;
       padding-bottom: 53px; }
+      @media (max-width: 991px) {
+        .magazines .magazine-row .description-block {
+          width: auto;
+          padding-left: 30px;
+          padding-right: 30px;
+          order: 0; } }
       .magazines .magazine-row .description-block h4 {
         font-size: 24px;
         font-family: "Circe";
