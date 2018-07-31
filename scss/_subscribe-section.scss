@@ -2,12 +2,22 @@
   padding-top: 61px;
   padding-bottom: 56px;
   background-image: url("../assets/bg-subscribe.png");
+  @media (max-width:991px) {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
   .subscribe-block{
     width: 100%;
     display: flex;
     margin-top: 43px;
     padding-left: 15px;
     padding-right: 15px;
+    @media (max-width: 991px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 23px;
+    }
     input{
       outline: none !important;
       border: 0;
@@ -17,6 +27,10 @@
       padding-left: 25px;
       padding-right: 25px;
       margin-right: -190px;
+      @media (max-width: 991px) {
+        margin-right: 0;
+        margin-bottom: 16px;
+      }
       height: 47px;
       &::placeholder{
           font-size: 18px;
@@ -27,6 +41,9 @@
     }
     button{
       margin-top: 2px;
+      line-height: 1;
+      padding-top: 10px;
+      padding-bottom: 10px;
     }
   }
 }

@@ -390,7 +390,7 @@
 <section class="subscribe-section">
     <div class="container">
         <div class="row">
-            <div class="col-auto mx-auto">
+            <div class="col-12 col-lg-auto mx-auto">
                 <h2>Подпишитесь! Новинки, скидки, предложения!</h2>
                 <div class="subscribe-block">
                     <input type="text" placeholder="Ваша электронная почта">
@@ -404,13 +404,13 @@
 <footer>
     <div class="container">
         <div class="row justify-content-between align-items-center">
-            <div class="col-auto text-center">
+            <div class="col-12 col-lg-auto text-center pic-block">
                 <img src="./assets/logo@2x.png" width="196" alt="" class="logo">
                 <p class="copyright">© 2018 год АО «Чистое Серебро»</p>
                 <p><a href="tel:7 (800) 775-68-37" class="phone">7 (800) 775-68-37</a></p>
                 <button class="button btn-blue">Заказать звонок</button>
             </div>
-            <div class="col-auto">
+            <div class="col-auto d-none d-lg-block">
                 <div class="footer-menu">
                     <p class="footer-menu--name">О компании</p>
                     <a href="#" class="footer-menu--item">Каталог продукции</a>
@@ -421,7 +421,7 @@
                     <a href="#" class="footer-menu--item">Политика конфиденциальности</a>
                 </div>
             </div>
-            <div class="col-auto">
+            <div class="col-auto d-none d-lg-block">
                 <div class="footer-menu">
                     <p class="footer-menu--name">Украшения</p>
                     <a href="#" class="footer-menu--item">Кольца</a>
@@ -432,7 +432,7 @@
                     <a href="#" class="footer-menu--item">Другое</a>
                 </div>
             </div>
-            <div class="col-auto">
+            <div class="col-12 col-lg-auto">
                 <div class="footer-menu">
                     <p class="footer-menu--name">Способ оплаты</p>
                     <div class="payment-block">
@@ -474,7 +474,8 @@
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script>
-    var headerSlider = $('.header-slider .slider-constructor');
+    var headerSlider = $('.header-slider .slider-constructor'),
+        mobileHeaderSlider = $('.mobile-header-slider');
 
     headerSlider.owlCarousel({
         dots: true,
@@ -488,6 +489,14 @@
     });
     $('.header-slider .right').on('click', function () {
         headerSlider.trigger('next.owl.carousel')
+    });
+
+    mobileHeaderSlider.owlCarousel({
+        dots: true,
+        items: 1,
+        margin: 0,
+        loop: true,
+        autoHeight: true
     });
 </script>
 </body>

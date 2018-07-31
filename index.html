@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./css/build.css">
 </head>
 <body>
-<section>
+<header>
     <div class="container-fluid mobile-menu-container">
         <div class="row mobile-menu">
             <div class="col-auto px-0">
@@ -123,7 +123,8 @@
             <div class="col-auto top-nav--item"><a href="magazines.html">Фирменные магазины</a></div>
         </div>
     </div>
-</section>
+</header>
+
 <section class="mobile-header-slider-section">
     <div class="owl-theme owl-carousel mobile-header-slider">
         <div>
@@ -137,6 +138,7 @@
         </div>
     </div>
 </section>
+
 <section class="header-slider">
     <button class="slider-arrow left">
 
@@ -211,7 +213,7 @@
 <section class="bg-white-uzor main-section">
     <div class="container">
         <div class="row">
-            <div class="col-8 mx-auto text-center">
+            <div class="col-12 col-lg-8 mx-auto text-center">
                 <h1 class="text-deepBlue fw-bold mb43">ЧИСТОЕ СЕРЕБРО</h1>
                 <p class="primary-text">«Чистое серебро» на ювелирном рынке с 2000 года. Наше предприятие, имея богатый
                     опыт и накопленные традиции, идет в ногу со временем, при этом мы всегда остаемся собой.
@@ -222,22 +224,24 @@
             </div>
         </div>
         <div class="row tiles">
-            <div class="col-4 tile-item">
+            <div class="col-12 col-lg-4 tile-item">
                 <img src="./assets/ring.png" width="155" alt="">
                 <p class="primary-text">В наших магазинах представлено более четырех тысяч видов украшений, каждое из
                     которых – это результат тщательного отбора</p>
             </div>
-            <div class="col-4 tile-item">
+            <div class="col-12 col-lg-4 tile-item">
                 <img src="./assets/neckcale.png" width="178" alt="">
                 <p class="primary-text">В основном мы реализуем украшения наиболее востребованные большинством
                     покупателей, изготавливаемые в России, Италии, Индии, Таиланде, Китае и других странах.</p>
             </div>
-            <div class="col-4 tile-item">
+            <div class="col-12 col-lg-4 tile-item">
                 <img src="./assets/neckcale2.png" width="136" alt="">
                 <p class="primary-text">Мы внимательно следим за спросом, поэтому самые популярные товары закупаем
                     оптовой партией. Это позволяет устанавливать на украшения низкие цены.</p>
             </div>
         </div>
+    </div>
+    <div class="container px-0">
         <div class="row item-collections">
             <div class="item width-item">
                 <img src="./assets/item-collections/1.png" alt="" class="img-bg">
@@ -279,6 +283,7 @@
                 </div>
             </div>
         </div>
+
     </div>
 </section>
 
@@ -390,7 +395,7 @@
 <section class="promo-woman">
     <div class="container">
         <div class="row">
-            <div class="col-5 offset-1 text-center">
+            <div class="col-12 col-lg-5 offset-lg-1 text-center">
                 <img src="./assets/logo@2x.png" width="305" alt="" class="logo">
                 <img src="./assets/splitter-white.png" alt="" class="logo">
                 <p class="promo-description">Чистое серебро отобрало для вас самые лучшие украшения из серебра на любой
@@ -487,7 +492,7 @@
 <section class="subscribe-section">
     <div class="container">
         <div class="row">
-            <div class="col-auto mx-auto">
+            <div class="col-12 col-lg-auto mx-auto">
                 <h2>Подпишитесь! Новинки, скидки, предложения!</h2>
                 <div class="subscribe-block">
                     <input type="text" placeholder="Ваша электронная почта">
@@ -577,10 +582,26 @@
         mobileHeaderSlider = $('.mobile-header-slider');
 
     jewelerySlider.owlCarousel({
-        dots: true,
-        items: 4,
-        margin: 16,
-        loop: true
+        responsive:{
+            0:{
+                dots: true,
+                items: 1,
+                margin: 0,
+                loop: true,
+            },
+            768:{
+                dots: true,
+                items: 2,
+                margin: 16,
+                loop: true,
+            },
+            992:{
+                dots: true,
+                items: 4,
+                margin: 16,
+                loop: true,
+            }
+        }
     });
     $('.jeweleries .left').on('click', function () {
         jewelerySlider.trigger('prev.owl.carousel')
@@ -591,10 +612,26 @@
 
 
     hitsSlider.owlCarousel({
-        dots: true,
-        items: 4,
-        margin: 16,
-        loop: true
+        responsive:{
+            0:{
+                dots: true,
+                items: 1,
+                margin: 0,
+                loop: true,
+            },
+            768:{
+                dots: true,
+                items: 2,
+                margin: 16,
+                loop: true,
+            },
+            992:{
+                dots: true,
+                items: 4,
+                margin: 16,
+                loop: true,
+            }
+        }
     });
 
     $('.hits .left').on('click', function () {
@@ -618,6 +655,7 @@
     $('.header-slider .right').on('click', function () {
         headerSlider.trigger('next.owl.carousel')
     });
+
     mobileHeaderSlider.owlCarousel({
         dots: true,
         items: 1,

@@ -24,7 +24,9 @@ input {
   margin-bottom: 43px; }
 
 .bg-white-uzor {
-  background-image: url("../assets/bg-white.png"); }
+  background-image: url("../assets/bg-white-uzor.png");
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .primary-text {
   font-size: 18px;
@@ -374,6 +376,10 @@ button {
 .main-section {
   padding-top: 88px;
   padding-bottom: 198px; }
+  @media (max-width: 991px) {
+    .main-section {
+      padding-top: 30px;
+      padding-bottom: 60px; } }
 
 .about-section {
   padding-top: 43px; }
@@ -600,11 +606,18 @@ button {
     padding-top: 116px; }
     .slider.hits h1 {
       margin-bottom: 34px; }
+    @media (max-width: 991px) {
+      .slider.hits {
+        padding-top: 30px;
+        padding-bottom: 50px; } }
   .slider .gray-splitter {
     width: 160px;
     margin-right: 12px;
     margin-left: 12px;
     position: relative; }
+    @media (max-width: 991px) {
+      .slider .gray-splitter {
+        display: none; } }
     .slider .gray-splitter:before {
       position: absolute;
       content: '';
@@ -626,6 +639,9 @@ button {
       border-radius: 100%;
       padding: 0;
       height: 45px; }
+      @media (max-width: 991px) {
+        .slider .container .arrow {
+          display: none; } }
       .slider .container .arrow:hover {
         background: #0092c5; }
       .slider .container .arrow.left {
@@ -643,6 +659,9 @@ button {
     display: flex;
     justify-content: center;
     border-bottom: 1px solid #d0d2d7; }
+    @media (max-width: 991px) {
+      .slider .slider-nav {
+        display: none; } }
     .slider .slider-nav .slider-nav--item {
       margin-right: 25px;
       margin-left: 25px;
@@ -682,6 +701,10 @@ button {
       text-align: center;
       padding-top: 31px;
       position: relative; }
+      @media (max-width: 991px) {
+        .slider .slider-container .slider-item {
+          width: 300px;
+          margin: auto; } }
       .slider .slider-container .slider-item:hover {
         padding-top: 30px;
         border: 1px solid #44afd4; }
@@ -703,6 +726,7 @@ button {
           font-size: 18px;
           margin-bottom: 0;
           line-height: 1;
+          margin-top: 5px;
           margin-left: -5px; }
         .slider .slider-container .slider-item .promo-label .text {
           font-size: 11px;
@@ -876,12 +900,22 @@ button {
   padding-top: 61px;
   padding-bottom: 56px;
   background-image: url("../assets/bg-subscribe.png"); }
+  @media (max-width: 991px) {
+    .subscribe-section {
+      text-align: center;
+      padding-top: 30px;
+      padding-bottom: 40px; } }
   .subscribe-section .subscribe-block {
     width: 100%;
     display: flex;
     margin-top: 43px;
     padding-left: 15px;
     padding-right: 15px; }
+    @media (max-width: 991px) {
+      .subscribe-section .subscribe-block {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 23px; } }
     .subscribe-section .subscribe-block input {
       outline: none !important;
       border: 0;
@@ -892,22 +926,37 @@ button {
       padding-right: 25px;
       margin-right: -190px;
       height: 47px; }
+      @media (max-width: 991px) {
+        .subscribe-section .subscribe-block input {
+          margin-right: 0;
+          margin-bottom: 16px; } }
       .subscribe-section .subscribe-block input::placeholder {
         font-size: 18px;
         font-family: "PFAgoraSerifPro";
         color: #333333;
         line-height: 1.2; }
     .subscribe-section .subscribe-block button {
-      margin-top: 2px; }
+      margin-top: 2px;
+      line-height: 1;
+      padding-top: 10px;
+      padding-bottom: 10px; }
 
 .item-collections {
   justify-content: space-between;
   width: 1170px; }
+  @media (max-width: 991px) {
+    .item-collections {
+      width: 300px;
+      margin: auto; } }
   .item-collections .item {
     position: relative;
     width: 372px;
     height: 372px;
-    margin-bottom: 26px; }
+    margin-bottom: 26px;
+    overflow: hidden; }
+    @media (max-width: 991px) {
+      .item-collections .item {
+        width: 100%; } }
     .item-collections .item .img-bg {
       position: absolute;
       top: 0;
@@ -915,14 +964,32 @@ button {
       width: 100%;
       height: 100%;
       z-index: 1; }
+      @media (max-width: 991px) {
+        .item-collections .item .img-bg {
+          height: initial;
+          width: initial; } }
     .item-collections .item.width-item {
       width: 771px;
       height: 372px; }
+      @media (max-width: 991px) {
+        .item-collections .item.width-item {
+          width: 100%; }
+          .item-collections .item.width-item .img-bg {
+            position: absolute;
+            top: 0;
+            left: -310px;
+            width: initial;
+            z-index: 1; } }
       .item-collections .item.width-item .item-content {
         justify-content: space-between;
         padding-left: 42px;
         padding-bottom: 119px;
         padding-top: 126px; }
+        @media (max-width: 991px) {
+          .item-collections .item.width-item .item-content {
+            padding-left: 30px;
+            padding-bottom: 30px;
+            padding-top: 30px; } }
     .item-collections .item .item-content {
       position: absolute;
       top: 0;
@@ -934,12 +1001,16 @@ button {
       flex-direction: column;
       justify-content: flex-end;
       padding: 33px 51px; }
+      @media (max-width: 991px) {
+        .item-collections .item .item-content {
+          padding: 30px 30px; } }
       .item-collections .item .item-content.centered {
         align-items: center;
         text-align: center; }
       .item-collections .item .item-content .item-name {
         font-size: 24px;
-        font-family: "PFAgoraSerifProB";
+        font-family: "Circe";
+        font-weight: bold;
         color: black;
         text-transform: uppercase;
         line-height: 1.2; }
@@ -955,13 +1026,25 @@ button {
   background-size: cover;
   height: 731px;
   padding-top: 127px; }
+  @media (max-width: 991px) {
+    .promo-woman {
+      padding-top: 40px;
+      background-position-x: 0;
+      height: auto;
+      padding-bottom: 30px; } }
   .promo-woman .logo {
     margin-bottom: 37px; }
+    @media (max-width: 991px) {
+      .promo-woman .logo {
+        max-width: 100%; } }
   .promo-woman .promo-description {
     font-size: 24px;
     color: #333333;
     line-height: 1.2;
     width: 466px; }
+    @media (max-width: 991px) {
+      .promo-woman .promo-description {
+        width: 100%; } }
 
 .top-nav .top-nav--row {
   padding-top: 9px;

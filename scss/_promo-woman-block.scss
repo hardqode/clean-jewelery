@@ -4,14 +4,27 @@
   background-size: cover;
   height: 731px;
   padding-top: 127px;
+  @media (max-width:991px) {
+    padding-top: 40px;
+    //background: lightgray;
+    background-position-x:0 ;
+
+    height: auto;
+    padding-bottom: 30px;
+  }
   .logo {
     margin-bottom: 37px;
+    @media (max-width:991px) {
+      max-width: 100%;
+    }
   }
   .promo-description {
     font-size: 24px;
     color: rgb(51, 51, 51);
     line-height: 1.2;
     width: 466px;
-
+    @media (max-width: 991px){
+      width: 100%;
+    }
   }
 }
