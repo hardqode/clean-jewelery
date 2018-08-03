@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width = device-width,initial-scale=1" name="viewport">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+          integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./fonts/Circe/stylesheet.css">
+    <link rel="stylesheet" href="./fonts/Gilroy/stylesheet.css">
+    <link rel="stylesheet" href="./css/build.css">
+</head>
+<body>
+<header>
+    <div class="container-fluid mobile-menu-container">
+        <div class="row mobile-menu">
+            <div class="col-auto px-0">
+                <button class="btn-menu" data-toggle="modal" data-target="#mobile-modal-menu">
+                    <img src="./assets/icon-menu.png" width="25" alt="">
+                </button>
+                <div class="modal fade" tabindex="-1" role="dialog" id="mobile-modal-menu">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content mobile-modal-menu-container">
+                            <button class="btn-menu" data-dismiss="modal">
+                                <img src="./assets/icon-x.png" width="12" alt="">
+                            </button>
+                            <p class="menu-name">О компании</p>
+                            <ul class="menu-list">
+                                <li><a href="catalog.html">Каталог продукции</a></li>
+                                <li><a href="about.html">О компании</a></li>
+                                <li><a href="sales.html">Акции</a></li>
+                                <li><a href="franshize.html">Франшиза</a></li>
+                                <li><a href="magazines.html">Фирменные магазины</a></li>
+                                <li><a href="#">Политика конфиденциальности</a></li>
+                            </ul>
+                            <p class="menu-name">Украшения</p>
+                            <ul class="menu-list">
+                                <li><a href="catalog.html">Каталог продукции</a></li>
+                                <li><a href="about.html">О компании</a></li>
+                                <li><a href="sales.html">Акции</a></li>
+                                <li><a href="franshize.html">Франшиза</a></li>
+                                <li><a href="magazines.html">Фирменные магазины</a></li>
+                                <li><a href="#">Политика конфиденциальности</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-auto ml-auto px-0">
+                <button class="button btn-blue"><img src="./assets/icon-btn-phone.png" height="15" alt="">Позвонить
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid header-container">
+        <div class="row justify-content-around align-items-center">
+            <div class="col-12 col-lg-auto order-1 order-lg-0">
+                <div class="city-block">
+                    <div class="icon">
+                        <img src="./assets/icon-geo.png" alt="">
+                    </div>
+                    <div class="content content-city">
+                        <div><span class="name">Город <a href="#">Казань</a></span>
+                            <br>
+                            <span class="change-city" role="button" data-toggle="modal"
+                                  data-target="#change-city-modal">Сменить город<img src="./assets/angle-down.png"
+                                                                                     alt="">
+                            </span>
+                        </div>
+
+                        <div class="modal fade " tabindex="-1" role="dialog" id="change-city-modal">
+                            <div class="modal-dialog city-modal " role="document">
+                                <div class="modal-content custom-modal city">
+                                    <div class="custom-modal-container">
+                                        <div class="w-100 d-flex">
+                                            <button class="btn-menu ml-auto" data-dismiss="modal">
+                                                <img src="./assets/icon-x-gray.png" width="24" alt="">
+                                            </button>
+                                        </div>
+
+                                        <h2 class="main-header text-center">Выбрать город</h2>
+                                        <input type="text" placeholder="Город">
+                                        <span class="text-support">Например Москва или Санкт-Петербург</span>
+                                        <button class="button btn-blue">Сохранить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="change-city-popup d-none d-lg-flex" id="change-city-pop">
+                            <span>Ваш город <strong>Казань</strong>?</span>
+                            <span>
+                                <button class="button btn-blue"
+                                        onclick="document.getElementById('change-city-pop').remove()">Да</button>
+                                <button class="button outline-gray"
+                                        onclick="document.getElementById('change-city-pop').remove()"
+                                        data-toggle="modal"
+                                        data-target="#change-city-modal">Сменить город</button>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 col-lg-auto order-2 order-lg-1">
+                <div class="phone-block ">
+                    <div class="icon">
+                        <img src="./assets/icon-phone.png" alt="" height="16">
+                    </div>
+                    <div class="content">
+                        <p>
+                            <a href="tel:+7 (962) 575-25-55" class="phone">+7 (962) 575-25-55</a>
+                            <br>
+                            <span class="region">Москва и область</span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-lg-auto logo order-0 order-lg-2">
+                <img src="./assets/logo@2x.png" alt="" width="196">
+            </div>
+            <div class="col-12 col-lg-auto text-center order-3 order-lg-3">
+                <div class="phone-block ">
+                    <div class="icon">
+                        <img src="./assets/icon-phone.png" alt="" height="16">
+                    </div>
+                    <div class="content">
+
+                        <p>
+                            <a href="tel:+7 (917) 910-24-55" class="phone">+7 (917) 910-24-55</a>
+                            <br>
+                            <span class="region">Остальные регионы</span>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto d-none d-lg-block order-lg-4">
+                <button class="button btn-blue" data-toggle="modal" data-target="#order-call">Заказать звонок</button>
+                <div class="modal fade " tabindex="-1" role="dialog" id="order-call">
+                    <div class="modal-dialog call-modal " role="document">
+                        <div class="modal-content custom-modal call">
+                            <div class="custom-modal-container">
+                                <div class="w-100 d-flex">
+                                    <button class="btn-menu ml-auto" data-dismiss="modal">
+                                        <img src="./assets/icon-x-gray.png" width="24" alt="">
+                                    </button>
+                                </div>
+
+                                <h2 class="main-header text-center">Заказать звонок</h2>
+                                <input type="text" placeholder="Ваше имя">
+                                <input type="text" placeholder="Ваш телефон">
+                                <input type="text" placeholder="e-mail">
+                                <button class="button btn-blue" data-dismiss="modal">Отправить</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container top-nav d-none d-xl-block">
+        <div class="row top-nav--row">
+            <div class="col-auto top-nav--item"><a href="index.html">Главная</a></div>
+            <div class="col-auto top-nav--item"><a href="catalog.html">Каталог продукции</a></div>
+            <div class="col-auto top-nav--item"><a href="about.html">О компании</a></div>
+            <div class="col-auto top-nav--item"><a href="sales.html">Акции</a></div>
+            <div class="col-auto top-nav--item"><a href="franshize.html">Франшиза</a></div>
+            <div class="col-auto top-nav--item"><a href="magazines.html">Фирменные магазины</a></div>
+        </div>
+    </div>
+</header>
+<section class="mobile-header-slider-section">
+    <div class="owl-theme owl-carousel mobile-header-slider">
+        <div>
+            <img src="./assets/mobile-header-slider/1.png" alt="">
+        </div>
+        <div>
+            <img src="./assets/mobile-header-slider/1.png" alt="">
+        </div>
+        <div>
+            <img src="./assets/mobile-header-slider/1.png" alt="">
+        </div>
+    </div>
+</section>
+
+<section class="header-slider">
+    <button class="slider-arrow left">
+
+    </button>
+    <button class="slider-arrow right">
+
+    </button>
+    <div class="slider-constructor owl-carousel owl-theme">
+        <div class="slider-item">
+            <div class="bg-container">
+                <img src="./assets/header-slider-src/header-slider.png" alt="" class="bg-img">
+            </div>
+            <div class="container header-slider-item-content">
+                <div class="row">
+                    <div class="col-6 ml-auto">
+                        <div class="splitter">
+                            <span class="white-line"></span>
+                            <img src="./assets/header-slider-src/logo@2x.png" width="41" alt="" class="logo">
+                            <span class="white-line"></span>
+                        </div>
+                        <div class="text-block">
+                            <p class="text">Федеральная сеть</p>
+                            <p class="text-blue">ювелирных магазинов</p>
+                        </div>
+                        <div class="splitter mb-0">
+                            <span class="white-line"></span>
+                            <button class="button btn-pink">Подробнее</button>
+                            <span class="white-line"></span>
+                        </div>
+                        <div class="item-img-container">
+                            <img src="./assets/header-slider-src/ring.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-item">
+            <div class="bg-container">
+                <img src="./assets/header-slider-src/header-slider.png" alt="" class="bg-img">
+            </div>
+            <div class="container header-slider-item-content">
+                <div class="row">
+                    <div class="col-6 ml-auto">
+                        <div class="splitter">
+                            <span class="white-line"></span>
+                            <img src="./assets/header-slider-src/logo@2x.png" width="41" alt="" class="logo">
+                            <span class="white-line"></span>
+                        </div>
+                        <div class="text-block">
+                            <p class="text">Федеральная сеть</p>
+                            <p class="text-blue">ювелирных магазинов</p>
+                        </div>
+                        <div class="splitter mb-0">
+                            <span class="white-line"></span>
+                            <button class="button btn-pink">Подробнее</button>
+                            <span class="white-line"></span>
+                        </div>
+                        <div class="item-img-container">
+                            <img src="./assets/header-slider-src/ring.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-item">
+            <img src="./assets/header-slider-src/header-slider.png" alt="" class="bg-img">
+        </div>
+    </div>
+
+</section>
+
+<section class="breadcrumbs">
+    <div class="container">
+        <div class="row ">
+            <div class="col-auto px-lg-0">
+                <a href="#" class="breadcrumb-item">Главная</a>
+                <a href="#" class="breadcrumb-item">Каталог продукции</a></div>
+        </div>
+    </div>
+</section>
+
+<section class="item-section bg-white-uzor">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 px-lg-0 catalog-item-slider-container">
+                <div class="image-preview-container">
+                    <img src="./assets/catalog-item/item-preview.png" alt="">
+                </div>
+                <div class="image-thumb active" image-src="./assets/catalog-item/item-preview.png"><img src="./assets/catalog-item/image-thumb.png" alt=""></div>
+                <div class="image-thumb" image-src="./assets/catalog-item/item-preview1.png"><img src="./assets/catalog-item/image-thumb.png" alt=""></div>
+                <div class="image-thumb" image-src="./assets/catalog-item/item-preview2.png"><img src="./assets/catalog-item/image-thumb.png" alt=""></div>
+                <div class="image-thumb" image-src="./assets/catalog-item/item-preview.png"><img src="./assets/catalog-item/image-thumb.png" alt=""></div>
+            </div>
+            <div class="col-12 col-lg-6 mb-4 catalog-item-description-container">
+                <h3 class="main-header text-left">Серебряная подвеска</h3>
+                <p class="p-more-info">Подробное описание</p>
+                <p class="p-item-description">Бренд: Чистон серебро</p>
+                <p class="p-item-description">Коллекция: -40% НА CЕРЕБРО И ЧАСЫ</p>
+                <p class="p-item-description">Модель: 94031590</p>
+                <p class="p-item-description">Вставка: Фианит</p>
+                <p class="p-item-description">Подвеска фианит Серебро 925 пробы.</p>
+                <p class="p-item-description">Вес изделия: 1,31 г</p>
+                <div class="splitter"></div>
+                <p class="old-price">990 руб.</p>
+                <p class="current-price">790 руб.</p>
+                <div class="splitter"></div>
+                <button class="button outline-gray">Заказать</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="slider hits">
+    <div class="container">
+
+        <button class="arrow left"><img src="./assets/arrow.png" alt=""></button>
+        <button class="arrow right"><img src="./assets/arrow.png" alt=""></button>
+        <div class="row justify-content-center">
+            <div class="col-auto gray-splitter"></div>
+            <div class="col-auto text-center">
+                <h1 class="text-deepBlue fw-bold text-uppercase ">Мы рекомендуем</h1>
+            </div>
+            <div class="col-auto gray-splitter"></div>
+        </div>
+        <div class="row">
+            <div class="col-12 slider-container">
+                <div class="slider-constructor hits-slider owl-carousel owl-theme">
+                    <div class="slider-item">
+                        <div class="promo-label">
+                            <p class="sale-amount">10%</p>
+                            <p class="text">скидка</p>
+                        </div>
+                        <h3>Браслет</h3>
+                        <div class="item-img">
+                            <img src="./assets/sliders-first/1.png" alt="">
+                        </div>
+                        <div class="item-price-block">
+                            <span class="old-price">990 руб.</span>
+                            <span class="price"> от 790 руб.</span>
+                        </div>
+                        <div class="item-btn-block">
+                            <button class="button outline-gray">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="promo-label">
+                            <p class="sale-amount">10%</p>
+                            <p class="text">скидка</p>
+                        </div>
+                        <h3>Браслет</h3>
+                        <div class="item-img">
+                            <img src="./assets/sliders-first/2.png" alt="">
+                        </div>
+                        <div class="item-price-block">
+                            <span class="old-price">990 руб.</span>
+                            <span class="price"> от 790 руб.</span>
+                        </div>
+                        <div class="item-btn-block">
+                            <button class="button outline-gray">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="promo-label">
+                            <p class="sale-amount">10%</p>
+                            <p class="text">скидка</p>
+                        </div>
+                        <h3>Браслет</h3>
+                        <div class="item-img">
+                            <img src="./assets/sliders-first/3.png" alt="">
+                        </div>
+                        <div class="item-price-block">
+                            <span class="old-price">990 руб.</span>
+                            <span class="price"> от 790 руб.</span>
+                        </div>
+                        <div class="item-btn-block">
+                            <button class="button outline-gray">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="promo-label">
+                            <p class="sale-amount">10%</p>
+                            <p class="text">скидка</p>
+                        </div>
+                        <h3>Браслет</h3>
+                        <div class="item-img">
+                            <img src="./assets/sliders-first/4.png" alt="">
+                        </div>
+                        <div class="item-price-block">
+                            <span class="old-price">990 руб.</span>
+                            <span class="price"> от 790 руб.</span>
+                        </div>
+                        <div class="item-btn-block">
+                            <button class="button outline-gray">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="slider-item">1</div>
+                    <div class="slider-item">1</div>
+                    <div class="slider-item">1</div>
+                    <div class="slider-item">1</div>
+                    <div class="slider-item">1</div>
+                </div>
+            </div>
+            <div class="col-12 text-center">
+                <button class="button btn-blue">Показать весь каталог</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <div class="container">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-12 col-lg-auto text-center pic-block">
+                <img src="./assets/logo@2x.png" width="196" alt="" class="logo">
+                <p class="copyright">© 2018 год АО «Чистое Серебро»</p>
+                <p><a href="tel:7 (800) 775-68-37" class="phone">7 (800) 775-68-37</a></p>
+                <button class="button btn-blue">Заказать звонок</button>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+                <div class="footer-menu">
+                    <p class="footer-menu--name">О компании</p>
+                    <a href="#" class="footer-menu--item">Каталог продукции</a>
+                    <a href="#" class="footer-menu--item">О компании</a>
+                    <a href="#" class="footer-menu--item">Акации</a>
+                    <a href="#" class="footer-menu--item">Франшиза</a>
+                    <a href="#" class="footer-menu--item">Фирменные магазины</a>
+                    <a href="#" class="footer-menu--item">Политика конфиденциальности</a>
+                </div>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+                <div class="footer-menu">
+                    <p class="footer-menu--name">Украшения</p>
+                    <a href="#" class="footer-menu--item">Кольца</a>
+                    <a href="#" class="footer-menu--item">Серьги</a>
+                    <a href="#" class="footer-menu--item">Подвески</a>
+                    <a href="#" class="footer-menu--item">Цепи</a>
+                    <a href="#" class="footer-menu--item">Браслеты</a>
+                    <a href="#" class="footer-menu--item">Другое</a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-auto">
+                <div class="footer-menu">
+                    <p class="footer-menu--name">Способ оплаты</p>
+                    <div class="payment-block">
+                        <div class="payment-item">
+                            <img src="./assets/visa@2x.png" width="78" alt="">
+                        </div>
+                        <div class="payment-item">
+                            <img src="./assets/1200px-Mastercard-logo@2x.png" width="46" alt="">
+                        </div>
+                    </div>
+                    <p class="footer-menu--name">Мы в социальных сетях</p>
+                    <div class="social-block">
+                        <div class="social-block-item">
+                            <a href="#"><i class="fab fa-vk"></i></a>
+                        </div>
+                        <div class="social-block-item">
+                            <a href="#"> <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                        <div class="social-block-item">
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        </div>
+                        <div class="social-block-item">
+                            <a href="#"> <i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="social-block-item">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script>
+    var headerSlider = $('.header-slider .slider-constructor'),
+        mobileHeaderSlider = $('.mobile-header-slider'),
+        hitsSlider = $('.hits-slider');
+
+    headerSlider.owlCarousel({
+        dots: true,
+        items: 1,
+        margin: 0,
+        loop: true,
+        autoHeight: true
+    });
+    $('.header-slider .left').on('click', function () {
+        headerSlider.trigger('prev.owl.carousel')
+    });
+    $('.header-slider .right').on('click', function () {
+        headerSlider.trigger('next.owl.carousel')
+    });
+
+    mobileHeaderSlider.owlCarousel({
+        dots: true,
+        items: 1,
+        margin: 0,
+        loop: true,
+        autoHeight: true
+    });
+
+    hitsSlider.owlCarousel({
+        responsive: {
+            0: {
+                dots: true,
+                items: 1,
+                margin: 0,
+                loop: true,
+            },
+            768: {
+                dots: true,
+                items: 2,
+                margin: 16,
+                loop: true,
+            },
+            992: {
+                dots: true,
+                items: 4,
+                margin: 16,
+                loop: true,
+            }
+        }
+    });
+
+    $('.hits .left').on('click', function () {
+        hitsSlider.trigger('prev.owl.carousel')
+    });
+    $('.hits .right').on('click', function () {
+        hitsSlider.trigger('next.owl.carousel')
+    });
+</script>
+<script>
+    $('.image-thumb').on('click',function () {
+        var src = $(this).attr('image-src');
+        $('.image-thumb').each(function () {
+            $(this).removeClass('active');
+        });
+        $(this).addClass('active');
+        $('.image-preview-container img').attr('src',src);
+    })
+</script>
+</body>
+</html>
