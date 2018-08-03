@@ -536,7 +536,35 @@ button {
     .item-section .catalog-item-slider-container .image-preview-container {
       width: 100%;
       border: 1px solid #e4e4e4;
+      position: relative;
       margin-bottom: 12px; }
+      .item-section .catalog-item-slider-container .image-preview-container .promo-label {
+        border-radius: 100%;
+        position: absolute;
+        right: 15px;
+        top: 19px;
+        width: 53px;
+        height: 53px;
+        color: white;
+        background-color: #f99191;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold; }
+        .item-section .catalog-item-slider-container .image-preview-container .promo-label .sale-amount {
+          font-size: 18px;
+          margin-bottom: 0;
+          line-height: 1;
+          margin-top: 5px; }
+        .item-section .catalog-item-slider-container .image-preview-container .promo-label .text {
+          font-size: 11px;
+          margin-bottom: 0;
+          margin-top: -16px; }
+        .item-section .catalog-item-slider-container .image-preview-container .promo-label.new {
+          background-color: #6b6b6b;
+          font-size: 18px;
+          text-transform: uppercase; }
       .item-section .catalog-item-slider-container .image-preview-container img {
         max-width: 100%;
         width: 100%; }
